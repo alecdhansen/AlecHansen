@@ -1,6 +1,6 @@
-import { NavContainer, NavLeft, AlecImage } from "./style";
+import { NavContainer, NavLeft, NavRight, AlecImage } from "./style";
 import image from "../../assets/images/alec.jpg";
-import NavRight from "../NavRight";
+import NavRightContent from "../NavRightContent";
 
 const Header = () => {
   return (
@@ -8,7 +8,9 @@ const Header = () => {
       <NavLeft>
         <AlecImage src={image} />
       </NavLeft>
-      <NavRight />
+      <NavRight>
+        <NavRightContent />
+      </NavRight>
     </NavContainer>
   );
 };

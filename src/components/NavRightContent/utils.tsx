@@ -11,17 +11,17 @@ export interface IconProps {
 export const icons = [
   {
     content: "email",
-    icon: typeof HiOutlineMail,
+    icon: <HiOutlineMail />,
     url: "alecdhansen@gmail.com",
   },
   {
     content: "linkedin",
-    icon: typeof BsLinkedin,
+    icon: <BsLinkedin />,
     url: "https://www.linkedin.com/in/alecdhansen/",
   },
   {
     content: "github",
-    icon: typeof BsGithub,
+    icon: <BsGithub />,
     url: "https://github.com/alecdhansen",
   },
 ];
