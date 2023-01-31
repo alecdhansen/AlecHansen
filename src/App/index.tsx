@@ -5,10 +5,11 @@ import Header from "../components/Header";
 const App = () => {
   return (
     <>
-      <AppContainer />
-      <ContentContainer borderImage="#fff">
-        <Header />
-      </ContentContainer>
+      <AppContainer>
+        <ContentContainer>
+          <Header />
+        </ContentContainer>
+      </AppContainer>
     </>
   );
 };

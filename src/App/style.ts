@@ -1,42 +1,21 @@
 import styled from "styled-components";
 
 export const AppContainer = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: #212026;
-  position: absolute;
 `;
 
-export const ContentContainer = styled.div<{
-  borderImage: string;
-}>`
-  width: 90vw;
-  height: 100vh;
-  position: relative;
+export const ContentContainer = styled.div`
+  position: absolute;
+  width: 90%;
+  height: 100%;
   left: 5%;
-  &:before,
-  :after,
-  > :first-child:before,
-  > :first-child:after {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    content: "";
-    border-image: ${({ borderImage }) => borderImage};
-  }
-  &:before {
-    top: 0;
-    left: 0;
-    border-width: 20px 0 0 20px;
-    z-index: 10;
-  }
-  &:after {
-    bottom: 0;
-    right: 0;
-    border-width: 0 20px 20px 0;
-  }
-  @media (max-width: 800px) {
-    width: 100%;
-    left: 0%;
-  }
+  background: linear-gradient(to right, red 25px, transparent 0px) 0 0,
+    linear-gradient(to left, black 25px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, black 25px, transparent 4px) 0 0,
+    linear-gradient(to top, black 25px, transparent 4px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
 `;
