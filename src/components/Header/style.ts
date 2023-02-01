@@ -5,6 +5,7 @@ export const NavContainer = styled.div`
   align-items: center;
   height: 175px;
   position: relative;
+  padding: 0 5% 0 5%;
 `;
 
 export const NavLeft = styled.div`

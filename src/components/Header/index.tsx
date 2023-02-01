@@ -1,12 +1,12 @@
 import { NavContainer, NavLeft, NavRight, AlecImage } from "./style";
 import image from "../../assets/images/alec.jpg";
-import { NavRightContent } from "../NavRight";
+import NavRightContent from "../NavRight";
 
 const Header = () => {
   return (
     <NavContainer>
       <NavLeft>
-        <AlecImage src={image} />
+        <AlecImage src={image} />{" "}
       </NavLeft>
       <NavRight>
         <NavRightContent />
