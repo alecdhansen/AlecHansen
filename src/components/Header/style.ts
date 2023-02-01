@@ -1,16 +1,17 @@
 import styled from "styled-components/macro";
+import { ImageProps } from "./types";
 
 export const NavContainer = styled.div`
   display: flex;
   align-items: center;
   height: 175px;
   position: relative;
-  padding: 0 5% 0 5%;
+  padding: 0 10% 0 8%;
 `;
 
 export const NavLeft = styled.div`
+  position: relative;
   width: 50%;
-  margin-left: 5%;
   display: flex;
   justify-content: flex-start;
   @media (max-width: 800px) {
@@ -22,7 +23,6 @@ export const NavLeft = styled.div`
 export const NavRight = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin-right: 5%;
   width: 50%;
   z-index: 0;
   @media (max-width: 800px) {
@@ -32,19 +32,13 @@ export const NavRight = styled.div`
   }
 `;
 
-export interface ImageProps {
-  width?: number;
-  marginTop?: number;
-  zIndex?: number;
-  clipPath?: any;
-  animation?: any;
-}
-
 export const AlecImage = styled.img<ImageProps>`
-  width: 150px;
-  margin-top: 100px;
+  width: 175px;
+  margin-top: 160px;
+  margin-left: 20px;
   z-index: 0;
-  clip-path: polygon(28% 0, 100% 0%, 78% 100%, 0% 100%);
+  -webkit-filter: drop-shadow(50px 50px 50px #212026);
+  filter: drop-shadow(5px 5px 8px #212026);
   @keyframes createBox {
     from {
       margin-top: -200px;
@@ -52,5 +46,9 @@ export const AlecImage = styled.img<ImageProps>`
     to {
     }
   }
-  animation: createBox 2.5s ease;
+  /* animation: createBox 2.5s ease; */
+`;
+
+export const DotContainer = styled.div`
+  margin-top: 150px;
 `;
