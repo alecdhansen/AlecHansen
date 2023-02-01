@@ -7,13 +7,15 @@ export const AppContainer = styled.div`
   position: relative;
 `;
 
-export const TopBorderContainer = styled.div`
+export const BorderContainer = styled.div<{
+  left?: any;
+  right?: any;
+  bottom?: number;
+  marginTop?: any;
+}>`
   position: absolute;
-  left: 5%;
-  margin-top: 5px;
-`;
-export const BottomBorderContainer = styled.div`
-  position: absolute;
-  right: 5%;
-  bottom: 0;
+  left: ${({ left }) => left};
+  right: ${({ right }) => right};
+  bottom: ${({ bottom }) => bottom};
+  margin-top: ${({ marginTop }) => marginTop};
 `;

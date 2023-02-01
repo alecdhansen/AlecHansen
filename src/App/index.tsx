@@ -1,23 +1,19 @@
-import {
-  AppContainer,
-  TopBorderContainer,
-  BottomBorderContainer,
-} from "./style";
-import { colors, randomColor } from "./utils";
+import { AppContainer, BorderContainer } from "./style";
 import Header from "../components/Header";
-import TopCornerBorder from "../components/icons/TopCornerBorder";
-import BottomCornerBorder from "../components/icons/BottomCornerBorder";
+import { TopCornerBorder, BottomCornerBorder } from "../components/Borders";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [borderColor, setBorderColor] = useState([0]);
   return (
     <>
       <AppContainer>
-        <TopBorderContainer>
-          <TopCornerBorder />
-        </TopBorderContainer>
-        <BottomBorderContainer>
-          <BottomCornerBorder />
-        </BottomBorderContainer>
+        <BorderContainer left="5%" marginTop="5px">
+          <TopCornerBorder fill={borderColor} />
+        </BorderContainer>
+        <BorderContainer right="5%" bottom={0}>
+          <BottomCornerBorder fill={borderColor} />
+        </BorderContainer>
         <Header />
       </AppContainer>
     </>
