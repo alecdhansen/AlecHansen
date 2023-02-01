@@ -1,6 +1,6 @@
-import { HiOutlineMail } from "react-icons/hi";
-import { BsLinkedin } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
+import EmailIcon from "../icons/email";
+import GithubIcon from "../icons/github";
+import LinkedInIcon from "../icons/LinkedIn";
 
 export interface IconProps {
   content?: string;
@@ -11,17 +11,17 @@ export interface IconProps {
 export const icons = [
   {
     content: "email",
-    icon: <HiOutlineMail />,
-    url: "alecdhansen@gmail.com",
+    icon: <EmailIcon />,
+    url: "mailto:alecdhansen@gmail.com",
   },
   {
     content: "linkedin",
-    icon: <BsLinkedin />,
+    icon: <LinkedInIcon />,
     url: "https://www.linkedin.com/in/alecdhansen/",
   },
   {
     content: "github",
-    icon: <BsGithub />,
+    icon: <GithubIcon />,
     url: "https://github.com/alecdhansen",
   },
 ];
