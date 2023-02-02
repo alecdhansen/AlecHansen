@@ -28,8 +28,8 @@ const App = () => {
             <Header setFocus={setFocus} setC1={setC1} setC2={setC2} />
           </HeaderContainer>
           <MainContainer>
-            <FocusedContent focus={focus} setFocus={setFocus} c1={c1} c2={c2} />
-            <ProjectSideBar focus={focus} setFocus={setFocus} />
+            <FocusedContent focus={focus} c1={c1} c2={c2} />
+            <ProjectSideBar setFocus={setFocus} c1={c1} c2={c2} />
           </MainContainer>
         </Container>
         <BorderContainer right="5%" bottom={0}>

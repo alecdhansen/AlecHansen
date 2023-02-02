@@ -1,4 +1,6 @@
+import { Container } from "../style";
+
 const Braggem = () => {
-  return <div>braggem here</div>;
+  return <Container>braggem here</Container>;
 };
 export default Braggem;

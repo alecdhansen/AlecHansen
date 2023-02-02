@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
 export const ContentContainer = styled.div`
-  width: 50%;
+  width: 75%;
+  padding-right: 10%;
 `;

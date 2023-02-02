@@ -35,7 +35,6 @@ export const MainContainer = styled.div`
   width: 70%;
   display: flex;
   justify-content: center;
-  margin-top: 200px;
   @media (max-width: 800px) {
     flex-direction: column;
   }

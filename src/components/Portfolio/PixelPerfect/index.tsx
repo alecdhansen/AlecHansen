@@ -1,4 +1,6 @@
+import { Container } from "../style";
+
 const PixelPerfect = () => {
-  return <div>pixel perfect</div>;
+  return <Container>pixel perfect</Container>;
 };
 export default PixelPerfect;

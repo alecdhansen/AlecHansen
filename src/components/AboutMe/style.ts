@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const AboutMeContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 200px;
+  margin-right: 10px;
 `;
 
 export const GreetingHeader = styled.h2`

@@ -19,16 +19,6 @@ const FocusedContent: React.FC<Props> = ({ focus, c1, c2 }) => {
   if (focus === 4) {
     content = <PixelPerfect />;
   }
-
-  //   } else if (focus === 2) {
-  //     content = <ContactList />;
-  //   } else if (focus === 3) {
-  //     content = <BlogReadingSite />;
-  //   } else if (focus === 4) {
-  //     content = <BookmarkApp />;
-  //   } else if (focus === 5) {
-  //     content = <BlogCMS />;
-  //   }
   return <ContentContainer>{content}</ContentContainer>;
 };
 

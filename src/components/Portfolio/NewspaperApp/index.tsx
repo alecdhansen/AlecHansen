@@ -1,4 +1,6 @@
+import { Container } from "../style";
+
 const NewspaperApp = () => {
-  return <div>newspaper app</div>;
+  return <Container>newspaper app</Container>;
 };
 export default NewspaperApp;

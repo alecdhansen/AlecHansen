@@ -10,7 +10,7 @@ import image from "../../assets/images/alecwhite.png";
 import DotIcon from "../icons/Dot";
 import { IconProps, icons } from "./types";
 import { Props } from "../../utils/types";
-import { appColors, randomColor, randomizeOnClick } from "../../App/utils";
+import { appColors, randomColor } from "../../App/utils";
 
 const Header: React.FC<Props> = ({ setFocus, setC1, setC2 }) => {
   const handleImageClick = () => {
