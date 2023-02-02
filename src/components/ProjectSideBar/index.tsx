@@ -85,6 +85,22 @@ const ProjectSideBar: React.FC<Props> = ({ focus, setFocus, c1, c2 }) => {
               Pixel Perfect
             </Link>
           </Underline>
+          <Underline pLeft={focus === 4 ? "27px" : ""}>
+            <Link
+              borderImage={`linear-gradient(
+              to left,
+              ${c1},
+              ${c2}
+            ) 1 10%;`}
+              hover={`linear-gradient(
+              to left,
+              ${c2},
+              ${c1}
+            ) 1 10%;`}
+            >
+              This Website!
+            </Link>
+          </Underline>
         </LinkContainer>
       </ProjectNavContainer>
     </ContentContainer>

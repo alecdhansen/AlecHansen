@@ -7,6 +7,8 @@ import {
   Link,
   Underline,
   ContentContainer,
+  SubContainer,
+  SubItem,
 } from "../style";
 import { TitleHeader, BlurbContainer } from "../style";
 
@@ -24,16 +26,26 @@ const NewspaperApp: React.FC<Props> = ({ c1, c2, focus, setFocus }) => {
         <BlurbContainer>
           Full CRUD application designed for three distinct user types:
         </BlurbContainer>
+        <SubContainer>
+          <SubItem>
+            ● The general user is able to view articles on the homepage.
+          </SubItem>
+          <SubItem>
+            ● Authors are able to write articles and submit for review.
+          </SubItem>
+          <SubItem>
+            ● The editor is able to approve articles for publication or reject
+            those articles.
+          </SubItem>
+        </SubContainer>
         <TechnologiesContainer>
           <TechnologyIcon>React Js</TechnologyIcon>
           <TechnologyIcon>Python</TechnologyIcon>
           <TechnologyIcon>Django</TechnologyIcon>
-          <TechnologyIcon>Django-Celery</TechnologyIcon>
+          <TechnologyIcon>Django REST Framework</TechnologyIcon>
           <TechnologyIcon>React-Bootstrap</TechnologyIcon>
           <TechnologyIcon>React-Router</TechnologyIcon>
           <TechnologyIcon>Heroku</TechnologyIcon>
-          <TechnologyIcon>PostGres Database</TechnologyIcon>
-          <TechnologyIcon>NBA Schedule API</TechnologyIcon>
         </TechnologiesContainer>
         <LinksContainer>
           <Underline>

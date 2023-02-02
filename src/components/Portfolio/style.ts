@@ -23,6 +23,14 @@ export const BlurbContainer = styled.p`
   font-size: 18px;
 `;
 
+export const SubContainer = styled.div`
+  padding-left: 60px;
+  margin-bottom: 30px;
+`;
+export const SubItem = styled.p`
+  margin: 0px;
+`;
+
 export const TechnologiesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
