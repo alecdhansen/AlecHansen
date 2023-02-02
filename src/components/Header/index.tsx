@@ -33,7 +33,12 @@ const Header: React.FC<Props> = ({ setFocus, setC1, setC2 }) => {
       </NavLeft>
       <NavRight>
         {icons.map((icon: IconProps) => (
-          <NavLink href={icon.url} target="_blank">
+          <NavLink
+            title={icon.title}
+            key={icon.content}
+            href={icon.url}
+            target="_blank"
+          >
             {icon.icon}
           </NavLink>
         ))}

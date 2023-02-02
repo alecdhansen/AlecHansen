@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContentContainer = styled.div`
-  width: 300px;
+  width: 310px;
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -32,13 +32,20 @@ export const LinkContainer = styled.div`
   flex-direction: column;
 `;
 
-export const Underline = styled.div`
+export const Underline = styled.div<{
+  transform?: string;
+  pLeft?: string;
+}>`
   transition: all 0.1s linear;
   margin: 10px 0 10px 0;
+  transform: ${({ transform }) => transform};
+  padding-left: ${({ pLeft }) => pLeft};
+  transition: 0.3s;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
     animation: 1s;
-    padding-left: 6px;
+    padding-left: 27px;
+    transition: 0.3s;
   }
 `;
 
@@ -49,10 +56,8 @@ export const Link = styled.a<{ borderImage?: string; hover?: string }>`
   font-size: 20px;
   line-height: 40px;
   margin: 10px 0 10px 0;
-  color: #fff;
   cursor: pointer;
   &:hover {
     border-image: ${({ hover }) => hover};
-    color: #e3e1e1;
   }
 `;

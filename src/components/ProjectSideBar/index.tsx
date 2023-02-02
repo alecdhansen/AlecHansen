@@ -8,7 +8,7 @@ import {
   Underline,
 } from "./style";
 
-const ProjectSideBar: React.FC<Props> = ({ setFocus, c1, c2 }) => {
+const ProjectSideBar: React.FC<Props> = ({ focus, setFocus, c1, c2 }) => {
   return (
     <ContentContainer>
       <HeaderContent>Projects</HeaderContent>
@@ -25,7 +25,10 @@ const ProjectSideBar: React.FC<Props> = ({ setFocus, c1, c2 }) => {
       ) 1 40%;`}
       >
         <LinkContainer>
-          <Underline>
+          <Underline
+            transform={focus === 2 ? "scale(1.3)" : ""}
+            pLeft={focus === 2 ? "27px" : ""}
+          >
             <Link
               onClick={() => setFocus(2)}
               borderImage={`linear-gradient(
@@ -42,7 +45,10 @@ const ProjectSideBar: React.FC<Props> = ({ setFocus, c1, c2 }) => {
               Braggem
             </Link>
           </Underline>
-          <Underline>
+          <Underline
+            transform={focus === 3 ? "scale(1.3)" : ""}
+            pLeft={focus === 3 ? "27px" : ""}
+          >
             <Link
               onClick={() => setFocus(3)}
               borderImage={`linear-gradient(
@@ -59,7 +65,10 @@ const ProjectSideBar: React.FC<Props> = ({ setFocus, c1, c2 }) => {
               Newspaper Application
             </Link>
           </Underline>
-          <Underline>
+          <Underline
+            transform={focus === 4 ? "scale(1.3)" : ""}
+            pLeft={focus === 4 ? "27px" : ""}
+          >
             <Link
               onClick={() => setFocus(4)}
               borderImage={`linear-gradient(

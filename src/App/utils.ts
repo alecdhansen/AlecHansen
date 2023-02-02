@@ -4,7 +4,7 @@ export const randomColor = (arr: Array<any>, key: number) => {
   return object[key];
 };
 
-export const appColors = [
+export const appColors: Array<any> = [
   {
     1: "#b190ba",
     2: "#e8b595",
