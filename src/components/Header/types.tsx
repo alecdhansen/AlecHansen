@@ -1,5 +1,5 @@
-import EmailIcon from "../icons/email";
-import GithubIcon from "../icons/github";
+import EmailIcon from "../icons/Email";
+import GithubIcon from "../icons/Github";
 import LinkedInIcon from "../icons/LinkedIn";
 export interface ImageProps {
   width?: number;

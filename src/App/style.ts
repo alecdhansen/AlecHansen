@@ -4,7 +4,6 @@ export const AppContainer = styled.div`
   width: 100vw;
   height: 100vh;
   background: #212026;
-  position: relative;
 `;
 
 export const BorderContainer = styled.div<{
@@ -18,4 +17,15 @@ export const BorderContainer = styled.div<{
   right: ${({ right }) => right};
   bottom: ${({ bottom }) => bottom};
   margin-top: ${({ marginTop }) => marginTop};
+`;
+
+export const ContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const MainContainer = styled.div`
+  width: 90%;
+  display: flex;
+  justify-content: center;
 `;
