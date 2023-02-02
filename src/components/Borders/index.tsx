@@ -1,6 +1,6 @@
-import { color1, color2 } from "../../App/utils";
+import { Props } from "../../utils/types";
 
-export const TopCornerBorder = ({ fill }: { fill?: number[] }) => {
+export const TopCornerBorder: React.FC<Props> = ({ c1, c2 }) => {
   return (
     <svg
       width="300"
@@ -12,20 +12,20 @@ export const TopCornerBorder = ({ fill }: { fill?: number[] }) => {
     >
       <defs>
         <linearGradient id="grad0" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0" stop-color={color1} />
-          <stop offset=".5" stop-color={color2} />
-          <stop offset="1" stop-color={color1} />
+          <stop offset="0" stop-color={c1} />
+          <stop offset=".5" stop-color={c2} />
+          <stop offset="1" stop-color={c1} />
         </linearGradient>
       </defs>
       <path
-        fill={`url(#grad${fill}`}
+        fill={`url(#grad0`}
         d="M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"
       ></path>
     </svg>
   );
 };
 
-export const BottomCornerBorder = ({ fill }: { fill?: number[] }) => {
+export const BottomCornerBorder = () => {
   return (
     <svg
       width="300"
@@ -36,7 +36,7 @@ export const BottomCornerBorder = ({ fill }: { fill?: number[] }) => {
       data-inlinesvg=".inlineSvgFile-7"
     >
       <path
-        fill={`url(#grad${fill}`}
+        fill={`url(#grad0`}
         d="M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"
       ></path>
     </svg>

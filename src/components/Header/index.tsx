@@ -10,8 +10,15 @@ import image from "../../assets/images/alecwhite.png";
 import DotIcon from "../icons/Dot";
 import { IconProps, icons } from "./types";
 import { Props } from "../../utils/types";
+import { appColors, randomColor, randomizeOnClick } from "../../App/utils";
 
-const Header: React.FC<Props> = ({ setFocus }) => {
+const Header: React.FC<Props> = ({ setFocus, setC1, setC2 }) => {
+  const handleImageClick = () => {
+    setFocus(1);
+    setC1(randomColor(appColors, 1));
+    setC2(randomColor(appColors, 2));
+  };
+
   return (
     <NavContainer>
       <NavLeft>
@@ -19,7 +26,7 @@ const Header: React.FC<Props> = ({ setFocus }) => {
           <DotIcon />
         </DotContainer>
         <AlecImage
-          onClick={() => setFocus(1)}
+          onClick={handleImageClick}
           style={{ position: "absolute" }}
           src={image}
         />

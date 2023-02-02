@@ -1,15 +1,15 @@
 import { AboutMeContainer, BlurbContainer, GreetingHeader } from "./style";
-import { color1, color2 } from "../../App/utils";
+import { Props } from "../../utils/types";
 
-const AboutMe = () => {
+const AboutMe: React.FC<Props> = ({ c1, c2 }) => {
   return (
     <AboutMeContainer>
       <GreetingHeader>Hello There.</GreetingHeader>
       <BlurbContainer
         borderImage={`linear-gradient(
       to bottom, 
-      ${color1}, 
-      ${color2}
+      ${c1}, 
+      ${c2}
     ) 1 100%;`}
       >
         My name is Alec Hansen. I'm a software developer currently residing in

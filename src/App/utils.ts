@@ -46,6 +46,3 @@ export const appColors = [
     2: "#83d0cb",
   },
 ];
-
-export const color1: string = randomColor(appColors, 1);
-export const color2: string = randomColor(appColors, 2);
