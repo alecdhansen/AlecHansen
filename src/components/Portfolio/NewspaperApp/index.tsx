@@ -12,7 +12,7 @@ import {
 } from "../style";
 import { TitleHeader, BlurbContainer } from "../style";
 
-const NewspaperApp: React.FC<Props> = ({ c1, c2, focus, setFocus }) => {
+const NewspaperApp: React.FC<Props> = ({ c1, c2 }) => {
   return (
     <Container>
       <TitleHeader fontSize="80px">Newspaper App</TitleHeader>

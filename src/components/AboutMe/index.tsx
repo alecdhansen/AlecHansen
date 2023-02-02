@@ -1,10 +1,16 @@
-import { AboutMeContainer, BlurbContainer, GreetingHeader } from "./style";
+import {
+  AboutMeContainer,
+  BlurbContainer,
+  GreetingHeader,
+  Link,
+  Underline,
+} from "./style";
 import { Props } from "../../utils/types";
 
 const AboutMe: React.FC<Props> = ({ c1, c2 }) => {
   return (
     <AboutMeContainer>
-      <GreetingHeader>Hello There.</GreetingHeader>
+      <GreetingHeader>Hello There!</GreetingHeader>
       <BlurbContainer
         borderImage={`linear-gradient(
       to bottom, 
@@ -13,12 +19,32 @@ const AboutMe: React.FC<Props> = ({ c1, c2 }) => {
     ) 1 100%;`}
       >
         My name is Alec Hansen. I'm a software developer currently residing in
-        Greenville, South Carolina, USA. Contrary to popular belief, Lorem Ipsum
-        is not simply random text. It has roots in a piece of classical Latin
-        literature from 45 BC, making it over 2000 years old. Richard
-        McClintock, a Latin professor at Hampden-Sydney College in Virginia,
-        looked up one of the more obscure Latin words, consectetur, from a Lorem
-        Ipsum passage.
+        Greenville, South Carolina, USA. Coding has changed my life! My previous
+        career molded in me a strong background in client care and team
+        management. I now use these skills to build web and mobile applications
+        with a great attention to detail and (when with a team) I collaborate
+        with others thoughtfully and efficiently.
+        <br />
+        <br />
+        I'm looking for my next opportunity. Let me generate solutions that fit
+        your needs!
+        <Underline>
+          <Link
+            href="mailto:alecdhansen@gmail.com"
+            borderImage={`linear-gradient(
+        to left,
+        ${c1},
+        ${c2}
+      ) 1 10%;`}
+            hover={`linear-gradient(
+        to left,
+        ${c2},
+        ${c1}
+      ) 1 10%;`}
+          >
+            Message Me!
+          </Link>
+        </Underline>
       </BlurbContainer>
     </AboutMeContainer>
   );

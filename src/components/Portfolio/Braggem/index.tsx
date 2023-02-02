@@ -10,7 +10,7 @@ import {
 } from "../style";
 import { TitleHeader, BlurbContainer } from "../style";
 
-const Braggem: React.FC<Props> = ({ c1, c2, focus, setFocus }) => {
+const Braggem: React.FC<Props> = ({ c1, c2 }) => {
   return (
     <Container>
       <TitleHeader fontSize="85px">Braggem</TitleHeader>

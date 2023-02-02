@@ -19,3 +19,21 @@ export const BlurbContainer = styled.p<{ borderImage?: string }>`
   padding: 0 0 0 30px;
   font-size: 18px;
 `;
+export const Underline = styled.div`
+  transition: all 0.1s linear;
+  margin-top: 20px;
+`;
+
+export const Link = styled.a<{ borderImage?: string; hover?: string }>`
+  border-image: ${({ borderImage }) => borderImage};
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  color: #dedede;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    border-image: ${({ hover }) => hover};
+    color: #fff;
+    transition: 0.3s;
+  }
+`;
