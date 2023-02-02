@@ -5,9 +5,11 @@ export const Container = styled.div`
   margin-right: 10px;
 `;
 
-export const TitleHeader = styled.h2`
-  font-size: 85px;
+export const TitleHeader = styled.h2<{ fontSize?: string }>`
+  font-size: ${({ fontSize }) => fontSize};
   margin: 0 0 46px 0;
+  pointer-events: none;
+  flex-wrap: wrap;
 `;
 
 export const ContentContainer = styled.div<{ borderImage?: string }>`
@@ -35,6 +37,7 @@ export const TechnologyIcon = styled.span`
   font-size: 11px;
   margin: 0 10px 5px 0;
   font-weight: bold;
+  pointer-events: none;
 `;
 
 export const LinksContainer = styled.div`
@@ -53,7 +56,7 @@ export const Link = styled.a<{ borderImage?: string; hover?: string }>`
   border-image: ${({ borderImage }) => borderImage};
   border-bottom-width: 3px;
   border-bottom-style: solid;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px;
   margin: 10px 0 10px 0;
   color: #dedede;

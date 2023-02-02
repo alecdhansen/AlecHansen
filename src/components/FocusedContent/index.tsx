@@ -14,7 +14,9 @@ const FocusedContent: React.FC<Props> = ({ focus, setFocus, c1, c2 }) => {
     content = <Braggem c1={c1} c2={c2} focus={focus} setFocus={setFocus} />;
   }
   if (focus === 3) {
-    content = <NewspaperApp />;
+    content = (
+      <NewspaperApp c1={c1} c2={c2} focus={focus} setFocus={setFocus} />
+    );
   }
   if (focus === 4) {
     content = <PixelPerfect />;

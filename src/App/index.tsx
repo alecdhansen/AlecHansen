@@ -43,13 +43,7 @@ const App = () => {
 export default App;
 
 // export const portfolioData = [
-//   {
-//     title: "Braggem",
-//     description:
-//       "Braggem was built to provide users an exciting experience while following the NBA season. Predict game winners, view leaderboard, challenge other users, and customize your profile while showcasing your game-winner picking skills.",
-//     href: "https://braggem.herokuapp.com/",
-//     mediaUri: require("../media/braggem.png"),
-//   },
+//
 //   {
 //     title: "Newspaper Applicatoin",
 //     description:

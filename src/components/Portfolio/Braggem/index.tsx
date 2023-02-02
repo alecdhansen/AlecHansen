@@ -13,7 +13,7 @@ import { TitleHeader, BlurbContainer } from "../style";
 const Braggem: React.FC<Props> = ({ c1, c2, focus, setFocus }) => {
   return (
     <Container>
-      <TitleHeader>Braggem</TitleHeader>
+      <TitleHeader fontSize="85px">Braggem</TitleHeader>
       <ContentContainer
         borderImage={`linear-gradient(
       to bottom, 
