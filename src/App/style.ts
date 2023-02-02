@@ -19,13 +19,24 @@ export const BorderContainer = styled.div<{
   margin-top: ${({ marginTop }) => marginTop};
 `;
 
-export const ContentContainer = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`;
+
+export const HeaderContainer = styled.div`
+  width: 100%;
 `;
 
 export const MainContainer = styled.div`
-  width: 90%;
+  width: 70%;
   display: flex;
   justify-content: center;
+  margin-top: 200px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;

@@ -1,14 +1,14 @@
 import {
   AppContainer,
   BorderContainer,
-  ContentContainer,
+  Container,
+  HeaderContainer,
   MainContainer,
 } from "./style";
 import Header from "../components/Header";
 import { TopCornerBorder, BottomCornerBorder } from "../components/Borders";
 import { useState } from "react";
 import FocusedContent from "../components/FocusedContent";
-import Projects from "../components/ProjectSideBar";
 import ProjectSideBar from "../components/ProjectSideBar";
 
 const App = () => {
@@ -18,16 +18,18 @@ const App = () => {
   return (
     <>
       <AppContainer>
-        <BorderContainer left="5%" marginTop="5px">
+        <BorderContainer left="05%" marginTop="5px">
           <TopCornerBorder fill={borderColor} />
         </BorderContainer>
-        <ContentContainer>
-          <Header />
+        <Container>
+          <HeaderContainer>
+            <Header setFocus={setFocus} />
+          </HeaderContainer>
           <MainContainer>
             <FocusedContent focus={focus} setFocus={setFocus} />
             <ProjectSideBar focus={focus} setFocus={setFocus} />
           </MainContainer>
-        </ContentContainer>
+        </Container>
         <BorderContainer right="5%" bottom={0}>
           <BottomCornerBorder fill={borderColor} />
         </BorderContainer>

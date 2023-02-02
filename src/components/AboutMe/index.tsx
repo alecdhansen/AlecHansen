@@ -1,4 +1,11 @@
+import { AboutMeContainer, BlurbContainer, GreetingHeader } from "./style";
+
 const AboutMe = () => {
-  return <div>about me</div>;
+  return (
+    <AboutMeContainer>
+      <GreetingHeader>Hello There</GreetingHeader>
+      <BlurbContainer>about me</BlurbContainer>
+    </AboutMeContainer>
+  );
 };
 export default AboutMe;

@@ -46,6 +46,8 @@ export const AlecImage = styled.img<ImageProps>`
   margin-top: 190px;
   margin-left: 20px;
   z-index: 0;
+  cursor: pointer;
+
   -webkit-filter: drop-shadow(50px 50px 50px #212026);
   filter: drop-shadow(5px 5px 8px #212026);
   @keyframes createBox {
@@ -55,17 +57,13 @@ export const AlecImage = styled.img<ImageProps>`
     to {
     }
   }
-  animation: createBox 2.5s ease;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    animation: 1s;
+  }
 `;
 
-export const DotContainer = styled.div`
+export const DotContainer = styled.a`
   margin-top: 180px;
-  @keyframes createBox {
-    from {
-      margin-top: -200px;
-    }
-    to {
-    }
-  }
-  animation: createBox 2.5s ease;
 `;
