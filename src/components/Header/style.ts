@@ -20,15 +20,26 @@ export const NavLeft = styled.div`
     left: 0%;
   }
 `;
+
 export const NavRight = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 50%;
   z-index: 0;
-  @media (max-width: 800px) {
-    margin-right: 10%;
+  max-height: 50px;
+  @media (max-width: 400px) {
+    margin-right: 0%;
+    margin-top: 40px;
     width: 100%;
     left: 0%;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 401px) and (max-width: 800px) {
+    margin-right: 5%;
+    margin-top: 130px;
+    width: 100%;
+    left: 0%;
+    flex-wrap: wrap;
   }
 `;
 
