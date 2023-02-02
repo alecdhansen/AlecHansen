@@ -3,20 +3,22 @@ import styled from "styled-components";
 export const AppContainer = styled.div`
   width: 100vw;
   height: 100vh;
-  background: #212026;
 `;
 
-export const BorderContainer = styled.div<{
-  left?: any;
-  right?: any;
-  bottom?: number;
-  marginTop?: any;
-}>`
+export const TopBorderContainer = styled.div`
+  width: 90%;
+  height: 100%;
+  left: 5%;
+  pointer-events: none;
   position: absolute;
-  left: ${({ left }) => left};
-  right: ${({ right }) => right};
-  bottom: ${({ bottom }) => bottom};
-  margin-top: ${({ marginTop }) => marginTop};
+`;
+
+export const BottomBorderContainer = styled.div`
+  width: 90%;
+  height: 100%;
+  right: 5%;
+  pointer-events: none;
+  position: absolute;
 `;
 
 export const Container = styled.div`
@@ -38,4 +40,10 @@ export const MainContainer = styled.div`
   @media (max-width: 800px) {
     flex-direction: column;
   }
+`;
+
+export const CopywriteContainer = styled.div`
+  position: absolute;
+  right: 10%;
+  margin-top: 20px;
 `;
