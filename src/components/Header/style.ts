@@ -4,7 +4,7 @@ import { ImageProps } from "./types";
 export const NavContainer = styled.div`
   display: flex;
   align-items: center;
-  height: 175px;
+  height: 150px;
   position: relative;
   padding: 0 10% 0 8%;
 `;
@@ -32,9 +32,18 @@ export const NavRight = styled.div`
   }
 `;
 
+export const NavLink = styled.a`
+  padding-left: 10px;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+    animation: 1s;
+  }
+`;
+
 export const AlecImage = styled.img<ImageProps>`
   width: 175px;
-  margin-top: 160px;
+  margin-top: 190px;
   margin-left: 20px;
   z-index: 0;
   -webkit-filter: drop-shadow(50px 50px 50px #212026);
@@ -46,9 +55,17 @@ export const AlecImage = styled.img<ImageProps>`
     to {
     }
   }
-  /* animation: createBox 2.5s ease; */
+  animation: createBox 2.5s ease;
 `;
 
 export const DotContainer = styled.div`
-  margin-top: 150px;
+  margin-top: 180px;
+  @keyframes createBox {
+    from {
+      margin-top: -200px;
+    }
+    to {
+    }
+  }
+  animation: createBox 2.5s ease;
 `;

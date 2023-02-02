@@ -1,12 +1,12 @@
 const GithubIcon = () => {
   return (
     <svg
-      width="50px"
-      height="50px"
+      width="40px"
+      height="40px"
       viewBox="-0.8 -0.8 17.60 17.60"
       xmlns="http://www.w3.org/2000/svg"
       fill="#212026"
-      stroke="#212026"
+      stroke="#212024"
       stroke-width="0.00016"
       transform="matrix(-1, 0, 0, 1, 0, 0)rotate(0)"
     >

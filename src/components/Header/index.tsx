@@ -4,10 +4,11 @@ import {
   NavRight,
   AlecImage,
   DotContainer,
+  NavLink,
 } from "./style";
 import image from "../../assets/images/alecwhite.png";
-import NavRightContent from "../NavRight";
 import DotIcon from "../icons/Dot";
+import { IconProps, icons } from "./types";
 
 const Header = () => {
   return (
@@ -19,7 +20,9 @@ const Header = () => {
         <AlecImage style={{ position: "absolute" }} src={image} />
       </NavLeft>
       <NavRight>
-        <NavRightContent />
+        {icons.map((icon: IconProps) => (
+          <NavLink href={icon.url}>{icon.icon}</NavLink>
+        ))}
       </NavRight>
     </NavContainer>
   );

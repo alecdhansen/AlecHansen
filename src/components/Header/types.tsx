@@ -1,7 +1,13 @@
 import EmailIcon from "../icons/email";
 import GithubIcon from "../icons/github";
 import LinkedInIcon from "../icons/LinkedIn";
-
+export interface ImageProps {
+  width?: number;
+  marginTop?: number;
+  zIndex?: number;
+  clipPath?: any;
+  animation?: any;
+}
 export interface IconProps {
   content?: string;
   icon?: any;
