@@ -53,7 +53,7 @@ export const Underline = styled.div<{
     padding-left: ${({ hPleft }) => hPleft};
     transition: 0.3s;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 700px) {
     margin-left: ${({ mLeft }) => mLeft};
   }
 `;

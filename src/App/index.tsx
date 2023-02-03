@@ -12,27 +12,12 @@ import { TopCornerBorder, BottomCornerBorder } from "../components/Borders";
 import { useState } from "react";
 import FocusedContent from "../components/FocusedContent";
 import ProjectSideBar from "../components/ProjectSideBar";
-import { appColors, randomColor } from "./utils";
+import { appColors, randomColor, checkContainer } from "./utils";
 
 const App = () => {
   const [c1, setC1] = useState(randomColor(appColors, 1));
   const [c2, setC2] = useState(randomColor(appColors, 2));
   const [focus, setFocus] = useState(1);
-
-  const checkContainer = (focus: any) => {
-    if (focus === 1) {
-      return "translateY(-230px)";
-    }
-    if (focus === 2) {
-      return "translateY(-230px)";
-    }
-    if (focus === 3) {
-      return "translateY(-200px)";
-    }
-    if (focus === 4) {
-      return "translateY(-10px)";
-    }
-  };
 
   return (
     <>
@@ -49,7 +34,10 @@ const App = () => {
             <ProjectSideBar focus={focus} setFocus={setFocus} c1={c1} c2={c2} />
           </MainContainer>
         </Container>
-        <BottomBorderContainer transform={checkContainer()}>
+        <BottomBorderContainer
+          transform={checkContainer(focus)}
+          mTransform="translateY(-200px)"
+        >
           <BottomCornerBorder />
           <CopywriteContainer>&copy; Alec Hansen, 2023</CopywriteContainer>
         </BottomBorderContainer>

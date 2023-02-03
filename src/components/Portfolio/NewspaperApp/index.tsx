@@ -15,7 +15,7 @@ import { TitleHeader, BlurbContainer } from "../style";
 const NewspaperApp: React.FC<Props> = ({ c1, c2 }) => {
   return (
     <Container>
-      <TitleHeader fontSize="80px" lineHeight="3rem">
+      <TitleHeader fontSize="80px" lineHeight="4rem">
         Newspaper App
       </TitleHeader>
       <ContentContainer

@@ -46,3 +46,18 @@ export const appColors: Array<any> = [
     2: "#83d0cb",
   },
 ];
+
+export const checkContainer = (focus: number) => {
+  if (focus === 1) {
+    return "translateY(-245px)";
+  }
+  if (focus === 2) {
+    return "translateY(-210px)";
+  }
+  if (focus === 3) {
+    return "translateY(-207px)";
+  }
+  if (focus === 4) {
+    return "translateY(-167px)";
+  }
+};

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutMeContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
+  margin-top: 170px;
   width: 100%;
 `;
 
@@ -14,6 +14,7 @@ export const GreetingHeader = styled.h2`
   width: 100%;
   @media (max-width: 400px) {
     font-size: 14vw;
+    margin: 0 0 30px 0;
   }
   @media (min-width: 401px) and (max-width: 800px) {
     font-size: 14vw;

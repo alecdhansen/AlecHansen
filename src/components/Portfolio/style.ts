@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-top: 200px;
+  margin-top: 170px;
   margin-right: 10px;
 `;
 
@@ -17,6 +17,7 @@ export const TitleHeader = styled.h2<{
   @media (max-width: 400px) {
     font-size: 14vw;
     line-height: ${({ lineHeight }) => lineHeight};
+    margin: 0 0 47px 0;
   }
   @media (min-width: 401px) and (max-width: 800px) {
     width: 12vw;

@@ -46,7 +46,6 @@ const Braggem: React.FC<Props> = ({ c1, c2 }) => {
               href="https://braggem.herokuapp.com/"
               target="_blank"
               fontSize="14px"
-              margin="10px"
               borderImage={`linear-gradient(
         to left,
         ${c1},
@@ -86,7 +85,6 @@ const Braggem: React.FC<Props> = ({ c1, c2 }) => {
               href="https://www.youtube.com/watch?v=-ptcAcyyKY4"
               target="_blank"
               fontSize="14px"
-              margin="10px"
               borderImage={`linear-gradient(
         to left,
         ${c1},

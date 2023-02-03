@@ -15,7 +15,7 @@ export const NavLeft = styled.div`
   display: flex;
   justify-content: flex-start;
   @media (max-width: 800px) {
-    margin-left: 10%;
+    margin-left: 5%;
     width: 100%;
     left: 0%;
   }
