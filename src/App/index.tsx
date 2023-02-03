@@ -34,9 +34,9 @@ const App = () => {
             <ProjectSideBar focus={focus} setFocus={setFocus} c1={c1} c2={c2} />
           </MainContainer>
         </Container>
-        <CopywriteContainer>&copy; Alec Hansen, 2023</CopywriteContainer>
         <BottomBorderContainer>
           <BottomCornerBorder />
+          <CopywriteContainer>&copy; Alec Hansen, 2023</CopywriteContainer>
         </BottomBorderContainer>
       </AppContainer>
     </>

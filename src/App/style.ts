@@ -6,19 +6,33 @@ export const AppContainer = styled.div`
 `;
 
 export const TopBorderContainer = styled.div`
-  width: 90%;
-  height: 100%;
   left: 5%;
   pointer-events: none;
   position: absolute;
+  @media (max-width: 800px) {
+    left: 0%;
+  }
 `;
 
 export const BottomBorderContainer = styled.div`
-  width: 90%;
-  height: 100%;
-  right: 5%;
+  width: 95%;
   pointer-events: none;
+  display: flex;
+  justify-content: flex-end;
   position: absolute;
+  transform: translateY(-155px);
+  @media (max-width: 800px) {
+    right: 0%;
+  }
+`;
+
+export const CopywriteContainer = styled.div`
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  @media (max-width: 800px) {
+    right: 15%;
+  }
 `;
 
 export const Container = styled.div`
@@ -39,11 +53,6 @@ export const MainContainer = styled.div`
   justify-content: center;
   @media (max-width: 800px) {
     flex-direction: column;
+    width: 90%;
   }
-`;
-
-export const CopywriteContainer = styled.div`
-  position: absolute;
-  right: 10%;
-  margin-top: 20px;
 `;

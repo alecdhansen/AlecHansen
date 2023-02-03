@@ -27,10 +27,14 @@ const ProjectSideBar: React.FC<Props> = ({ focus, setFocus, c1, c2 }) => {
         <LinkContainer>
           <Underline
             transform={focus === 2 ? "scale(1.3)" : ""}
+            hTransform="scale(1.3)"
             pLeft={focus === 2 ? "27px" : ""}
+            hPleft="27px"
+            mLeft={focus === 2 ? "6px" : ""}
           >
             <Link
               onClick={() => setFocus(2)}
+              cursor="pointer"
               borderImage={`linear-gradient(
         to left,
         ${c1},
@@ -47,10 +51,14 @@ const ProjectSideBar: React.FC<Props> = ({ focus, setFocus, c1, c2 }) => {
           </Underline>
           <Underline
             transform={focus === 3 ? "scale(1.3)" : ""}
+            hTransform="scale(1.3)"
             pLeft={focus === 3 ? "27px" : ""}
+            mLeft={focus === 3 ? "6px" : ""}
+            hPleft="27px"
           >
             <Link
               onClick={() => setFocus(3)}
+              cursor="pointer"
               borderImage={`linear-gradient(
         to left,
         ${c1},
@@ -62,15 +70,19 @@ const ProjectSideBar: React.FC<Props> = ({ focus, setFocus, c1, c2 }) => {
         ${c1}
       ) 1 10%;`}
             >
-              Newspaper Application
+              Newspaper App
             </Link>
           </Underline>
           <Underline
             transform={focus === 4 ? "scale(1.3)" : ""}
+            hTransform="scale(1.3)"
             pLeft={focus === 4 ? "27px" : ""}
+            mLeft={focus === 4 ? "6px" : ""}
+            hPleft="27px"
           >
             <Link
               onClick={() => setFocus(4)}
+              cursor="pointer"
               borderImage={`linear-gradient(
         to left,
         ${c1},
@@ -85,8 +97,9 @@ const ProjectSideBar: React.FC<Props> = ({ focus, setFocus, c1, c2 }) => {
               Pixel Perfect
             </Link>
           </Underline>
-          <Underline pLeft="">
+          <Underline pLeft="" hPleft="0px" hTransform="scale(1)">
             <Link
+              cursor="default"
               borderImage={`linear-gradient(
               to left,
               ${c1},

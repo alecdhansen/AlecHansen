@@ -4,11 +4,18 @@ export const AboutMeContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 200px;
+  width: 100%;
 `;
 
 export const GreetingHeader = styled.h2`
-  font-size: 85px;
-  margin: 0 0 10px 0;
+  font-size: 6vw;
+  margin: 0 0 33px 0;
+  @media (max-width: 400px) {
+    font-size: 14vw;
+  }
+  @media (min-width: 401px) and (max-width: 800px) {
+    width: 12vw;
+  }
 `;
 
 export const BlurbContainer = styled.p<{ borderImage?: string }>`

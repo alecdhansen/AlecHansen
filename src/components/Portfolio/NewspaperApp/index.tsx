@@ -15,7 +15,9 @@ import { TitleHeader, BlurbContainer } from "../style";
 const NewspaperApp: React.FC<Props> = ({ c1, c2 }) => {
   return (
     <Container>
-      <TitleHeader fontSize="80px">Newspaper App</TitleHeader>
+      <TitleHeader fontSize="80px" lineHeight="3rem">
+        Newspaper App
+      </TitleHeader>
       <ContentContainer
         borderImage={`linear-gradient(
       to bottom, 

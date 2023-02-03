@@ -5,11 +5,23 @@ export const Container = styled.div`
   margin-right: 10px;
 `;
 
-export const TitleHeader = styled.h2<{ fontSize?: string }>`
+export const TitleHeader = styled.h2<{
+  fontSize?: string;
+  lineHeight?: string;
+}>`
   font-size: ${({ fontSize }) => fontSize};
-  margin: 0 0 46px 0;
+  margin: 0 0 50px 0;
   pointer-events: none;
   flex-wrap: wrap;
+  line-height: ${({ lineHeight }) => lineHeight};
+  @media (max-width: 400px) {
+    font-size: 14vw;
+    line-height: ${({ lineHeight }) => lineHeight};
+  }
+  @media (min-width: 401px) and (max-width: 800px) {
+    width: 12vw;
+    line-height: ${({ lineHeight }) => lineHeight};
+  }
 `;
 
 export const ContentContainer = styled.div<{ borderImage?: string }>`

@@ -34,29 +34,37 @@ export const LinkContainer = styled.div`
 
 export const Underline = styled.div<{
   transform?: string;
+  hTransform?: string;
   pLeft?: string;
+  hPleft?: string;
+  mLeft?: string;
 }>`
   transition: all 0.1s linear;
   margin: 10px 0 10px 0;
   transform: ${({ transform }) => transform};
   padding-left: ${({ pLeft }) => pLeft};
+  margin-left: ${({ mLeft }) => mLeft};
   transition: 0.3s;
   &:hover {
-    transform: scale(1.3);
+    transform: ${({ hTransform }) => hTransform};
     animation: 1s;
-    padding-left: 27px;
+    padding-left: ${({ hPleft }) => hPleft};
     transition: 0.3s;
   }
 `;
 
-export const Link = styled.a<{ borderImage?: string; hover?: string }>`
+export const Link = styled.a<{
+  borderImage?: string;
+  hover?: string;
+  cursor?: string;
+}>`
   border-image: ${({ borderImage }) => borderImage};
   border-bottom-width: 3px;
   border-bottom-style: solid;
   font-size: 20px;
   line-height: 40px;
   margin: 10px 0 10px 0;
-  cursor: pointer;
+  cursor: ${({ cursor }) => cursor};
   &:hover {
     border-image: ${({ hover }) => hover};
   }
