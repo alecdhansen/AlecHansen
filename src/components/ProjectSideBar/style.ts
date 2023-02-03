@@ -5,6 +5,9 @@ export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+  @media (max-width: 600px) {
+    margin-top: 50px;
+  }
 `;
 export const HeaderContent = styled.h3`
   font-size: 30px;
@@ -43,13 +46,15 @@ export const Underline = styled.div<{
   margin: 10px 0 10px 0;
   transform: ${({ transform }) => transform};
   padding-left: ${({ pLeft }) => pLeft};
-  margin-left: ${({ mLeft }) => mLeft};
   transition: 0.3s;
   &:hover {
     transform: ${({ hTransform }) => hTransform};
     animation: 1s;
     padding-left: ${({ hPleft }) => hPleft};
     transition: 0.3s;
+  }
+  @media (max-width: 400px) {
+    margin-left: ${({ mLeft }) => mLeft};
   }
 `;
 

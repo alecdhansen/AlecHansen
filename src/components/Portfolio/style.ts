@@ -67,12 +67,20 @@ export const LinksContainer = styled.div`
   width: 100%;
 `;
 
-export const Underline = styled.div`
+export const Underline = styled.div<{ margin?: string }>`
   transition: all 0.1s linear;
   margin: 0px 30px 10px 30px;
+  @media (max-width: 1274px) {
+    margin: ${({ margin }) => margin};
+  }
 `;
 
-export const Link = styled.a<{ borderImage?: string; hover?: string }>`
+export const Link = styled.a<{
+  borderImage?: string;
+  hover?: string;
+  fontSize?: string;
+  margin?: string;
+}>`
   border-image: ${({ borderImage }) => borderImage};
   border-bottom-width: 3px;
   border-bottom-style: solid;
@@ -86,5 +94,10 @@ export const Link = styled.a<{ borderImage?: string; hover?: string }>`
     border-image: ${({ hover }) => hover};
     color: #fff;
     transition: 0.3s;
+  }
+  @media (max-width: 1274px) {
+    font-size: ${({ fontSize }) => fontSize};
+    margin: ${({ margin }) => margin};
+    padding: 0;
   }
 `;

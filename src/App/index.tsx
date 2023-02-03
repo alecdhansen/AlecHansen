@@ -19,6 +19,21 @@ const App = () => {
   const [c2, setC2] = useState(randomColor(appColors, 2));
   const [focus, setFocus] = useState(1);
 
+  const checkContainer = (focus: any) => {
+    if (focus === 1) {
+      return "translateY(-230px)";
+    }
+    if (focus === 2) {
+      return "translateY(-230px)";
+    }
+    if (focus === 3) {
+      return "translateY(-200px)";
+    }
+    if (focus === 4) {
+      return "translateY(-10px)";
+    }
+  };
+
   return (
     <>
       <AppContainer>
@@ -34,7 +49,7 @@ const App = () => {
             <ProjectSideBar focus={focus} setFocus={setFocus} c1={c1} c2={c2} />
           </MainContainer>
         </Container>
-        <BottomBorderContainer>
+        <BottomBorderContainer transform={checkContainer()}>
           <BottomCornerBorder />
           <CopywriteContainer>&copy; Alec Hansen, 2023</CopywriteContainer>
         </BottomBorderContainer>

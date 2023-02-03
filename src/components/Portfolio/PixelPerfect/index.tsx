@@ -13,7 +13,9 @@ import { TitleHeader, BlurbContainer } from "../style";
 const PixelPerfect: React.FC<Props> = ({ c1, c2 }) => {
   return (
     <Container>
-      <TitleHeader fontSize="80px">Pixel Perfect</TitleHeader>
+      <TitleHeader fontSize="80px" lineHeight="4rem">
+        Pixel Perfect
+      </TitleHeader>
       <ContentContainer
         borderImage={`linear-gradient(
       to bottom, 

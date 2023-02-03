@@ -10,11 +10,13 @@ export const AboutMeContainer = styled.div`
 export const GreetingHeader = styled.h2`
   font-size: 6vw;
   margin: 0 0 33px 0;
+  line-height: 3rem;
+  width: 100%;
   @media (max-width: 400px) {
     font-size: 14vw;
   }
   @media (min-width: 401px) and (max-width: 800px) {
-    width: 12vw;
+    font-size: 14vw;
   }
 `;
 

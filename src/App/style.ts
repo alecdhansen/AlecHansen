@@ -14,15 +14,16 @@ export const TopBorderContainer = styled.div`
   }
 `;
 
-export const BottomBorderContainer = styled.div`
+export const BottomBorderContainer = styled.div<{ transform?: string }>`
   width: 95%;
   pointer-events: none;
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  transform: translateY(-155px);
+  transform: translateY(-271px);
   @media (max-width: 800px) {
     right: 0%;
+    transform: ${({ transform }) => transform};
   }
 `;
 

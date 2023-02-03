@@ -13,7 +13,9 @@ import { TitleHeader, BlurbContainer } from "../style";
 const Braggem: React.FC<Props> = ({ c1, c2 }) => {
   return (
     <Container>
-      <TitleHeader fontSize="85px">Braggem</TitleHeader>
+      <TitleHeader fontSize="85px" lineHeight="3rem">
+        Braggem
+      </TitleHeader>
       <ContentContainer
         borderImage={`linear-gradient(
       to bottom, 
@@ -39,10 +41,12 @@ const Braggem: React.FC<Props> = ({ c1, c2 }) => {
           <TechnologyIcon>NBA Schedule API</TechnologyIcon>
         </TechnologiesContainer>
         <LinksContainer>
-          <Underline>
+          <Underline margin="0">
             <Link
               href="https://braggem.herokuapp.com/"
               target="_blank"
+              fontSize="14px"
+              margin="10px"
               borderImage={`linear-gradient(
         to left,
         ${c1},
@@ -57,10 +61,12 @@ const Braggem: React.FC<Props> = ({ c1, c2 }) => {
               View Site
             </Link>
           </Underline>
-          <Underline>
+          <Underline margin="0">
             <Link
               href="https://github.com/alecdhansen/ccs-final-project"
               target="_blank"
+              fontSize="14px"
+              margin="10px"
               borderImage={`linear-gradient(
         to left,
         ${c1},
@@ -75,10 +81,12 @@ const Braggem: React.FC<Props> = ({ c1, c2 }) => {
               Github Repo
             </Link>
           </Underline>
-          <Underline>
+          <Underline margin="0">
             <Link
               href="https://www.youtube.com/watch?v=-ptcAcyyKY4"
               target="_blank"
+              fontSize="14px"
+              margin="10px"
               borderImage={`linear-gradient(
         to left,
         ${c1},
