@@ -7,8 +7,8 @@ const Resume = () => {
       id="_x32_"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="-117.76 -117.76 747.52 747.52"
-      fill="#212026"
-      stroke="#212026"
+      fill="var(--svgfill)"
+      stroke="var(--svgfill)"
       stroke-width="5.632"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0">
@@ -26,7 +26,7 @@ const Resume = () => {
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
-        <style type="text/css"> fill=#212026 </style>{" "}
+        <style type="text/css"> fill="var(--svgfill)" </style>{" "}
         <g>
           {" "}
           <path

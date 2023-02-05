@@ -50,15 +50,20 @@ export const TechnologiesContainer = styled.div`
   padding: 0 0 0 30px;
 `;
 export const TechnologyIcon = styled.span`
-  background-color: #212026;
-  color: #fff;
-  border: 1px solid #fff;
+  background-color: var(--dark);
+  color: var(--light);
+  border: 1px solid var(--light);
   padding: 2px 6px;
   border-radius: 10px;
   font-size: 11px;
   margin: 0 10px 5px 0;
   font-weight: bold;
   pointer-events: none;
+  @media (prefers-color-scheme: light) {
+    background-color: var(--light);
+    color: var(--dark);
+    border: 1px solid var(--dark);
+  }
 `;
 
 export const LinksContainer = styled.div`
