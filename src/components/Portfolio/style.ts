@@ -88,12 +88,10 @@ export const Link = styled.a<{
   font-size: 18px;
   line-height: 40px;
   margin: 10px 0 10px 0;
-  color: #dedede;
   cursor: pointer;
   transition: 0.3s;
   &:hover {
     border-image: ${({ hover }) => hover};
-    color: #fff;
     transition: 0.3s;
   }
   @media (max-width: 1274px) {

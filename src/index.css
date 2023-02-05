@@ -4,8 +4,8 @@
   line-height: 24px;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.849);
   background-color: #212026;
 
   font-synthesis: none;
@@ -58,13 +58,19 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #212026;
+    background-color: rgba(255, 255, 255, 0.87);
+  }
+  a {
+    color: #212026;
   }
   a:hover {
-    color: #747bff;
+    color: #464646;
   }
   button {
     background-color: #f9f9f9;
+  }
+  svg {
+    fill: ;
   }
 }

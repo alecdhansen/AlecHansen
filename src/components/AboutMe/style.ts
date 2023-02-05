@@ -37,12 +37,10 @@ export const Link = styled.a<{ borderImage?: string; hover?: string }>`
   border-image: ${({ borderImage }) => borderImage};
   border-bottom-width: 3px;
   border-bottom-style: solid;
-  color: #dedede;
   cursor: pointer;
   transition: 0.3s;
   &:hover {
     border-image: ${({ hover }) => hover};
-    color: #fff;
     transition: 0.3s;
   }
 `;
