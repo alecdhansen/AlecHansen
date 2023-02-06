@@ -28,24 +28,24 @@ const AboutMe: React.FC<Props> = ({ c1, c2 }) => {
         <br />
         I'm looking for my next opportunity. Let me generate solutions that fit
         your needs!
-        <Underline>
-          <Link
-            href="mailto:alecdhansen@gmail.com"
-            borderImage={`linear-gradient(
+      </BlurbContainer>
+      <Underline>
+        <Link
+          href="mailto:alecdhansen@gmail.com"
+          borderImage={`linear-gradient(
         to left,
         ${c1},
         ${c2}
       ) 1 10%;`}
-            hover={`linear-gradient(
+          hover={`linear-gradient(
         to left,
         ${c2},
         ${c1}
       ) 1 10%;`}
-          >
-            Message Me!
-          </Link>
-        </Underline>
-      </BlurbContainer>
+        >
+          Message Me!
+        </Link>
+      </Underline>
     </AboutMeContainer>
   );
 };

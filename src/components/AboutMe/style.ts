@@ -21,16 +21,18 @@ export const GreetingHeader = styled.h2`
   }
 `;
 
+export const Underline = styled.div`
+  transition: all 0.1s linear;
+  margin-top: 20px;
+  margin-left: 35px;
+`;
+
 export const BlurbContainer = styled.p<{ borderImage?: string }>`
   border-image: ${({ borderImage }) => borderImage};
   border-left-width: 3px;
   border-left-style: solid;
   padding: 0 0 0 30px;
   font-size: 18px;
-`;
-export const Underline = styled.div`
-  transition: all 0.1s linear;
-  margin-top: 20px;
 `;
 
 export const Link = styled.a<{ borderImage?: string; hover?: string }>`

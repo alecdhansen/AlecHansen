@@ -9,24 +9,24 @@ const EmailIcon = () => {
       viewBox="-92.16 -92.16 696.32 696.32"
       fill="var(--svgfill)"
       stroke="var(--svgfill)"
-      stroke-width="0.00512"
+      strokeWidth="0.00512"
     >
       <g
         id="SVGRepo_bgCarrier"
-        stroke-width="0"
+        strokeWidth="0"
         transform="translate(0,0), scale(1)"
       >
         <path
           transform="translate(-92.16, -92.16), scale(43.52)"
           fill="url(#grad0)"
           d="M9.166.33a2.25 2.25 0 00-2.332 0l-5.25 3.182A2.25 2.25 0 00.5 5.436v5.128a2.25 2.25 0 001.084 1.924l5.25 3.182a2.25 2.25 0 002.332 0l5.25-3.182a2.25 2.25 0 001.084-1.924V5.436a2.25 2.25 0 00-1.084-1.924L9.166.33z"
-          stroke-width="0"
+          strokeWidth="0"
         ></path>
       </g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}

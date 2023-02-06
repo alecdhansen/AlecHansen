@@ -12,9 +12,9 @@ export const TopCornerBorder: React.FC<Props> = ({ c1, c2 }) => {
     >
       <defs>
         <linearGradient id="grad0" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0" stop-color={c1} />
-          <stop offset=".5" stop-color={c2} />
-          <stop offset="1" stop-color={c1} />
+          <stop offset="0" stopColor={c1} />
+          <stop offset=".5" stopColor={c2} />
+          <stop offset="1" stopColor={c1} />
         </linearGradient>
       </defs>
       <path
