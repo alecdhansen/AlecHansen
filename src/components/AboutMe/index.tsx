@@ -47,7 +47,7 @@ const AboutMe: React.FC<Props> = ({ c1, c2 }) => {
           Message Me!
         </Link>
       </Underline>
-      <Form />
+      {/* <Form /> */}
     </AboutMeContainer>
   );
 };
