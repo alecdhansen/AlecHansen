@@ -300,7 +300,7 @@ Error generating stack: `+i.message+`
   @media (max-width: 800px) {
     width: 100%;
   }
-`,Ch=({focus:e,setFocus:t,c1:n,c2:r})=>{let l;return e===1&&(l=y(gh,{c1:n,c2:r})),e===2&&(l=y(wh,{c1:n,c2:r})),e===3&&(l=y(Sh,{c1:n,c2:r})),e===4&&(l=y(kh,{c1:n,c2:r})),y(xh,{children:l})},Eh=B.div`
+`,Ch=({focus:e,c1:t,c2:n})=>{let r;return e===1&&(r=y(gh,{c1:t,c2:n})),e===2&&(r=y(wh,{c1:t,c2:n})),e===3&&(r=y(Sh,{c1:t,c2:n})),e===4&&(r=y(kh,{c1:t,c2:n})),y(xh,{children:r})},Eh=B.div`
   width: 310px;
   display: flex;
   flex-direction: column;
