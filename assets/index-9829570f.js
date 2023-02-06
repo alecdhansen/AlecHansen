@@ -136,7 +136,7 @@ Error generating stack: `+i.message+`
     border-image: ${({hover:e})=>e};
     transition: 0.3s;
   }
-`,gh=()=>U("form",{name:"contact","data-netlify":"true",children:[g("p",{children:U("label",{children:["Name ",g("input",{type:"text",name:"name"})]})}),g("p",{children:U("label",{children:["Email Address",g("input",{type:"email",name:"email"})]})}),g("p",{children:U("label",{htmlFor:"form",children:["Message ",g("textarea",{id:"form",rows:1,cols:10})]})}),g("p",{children:g("button",{type:"submit",children:"Send"})})]}),yh=({c1:e,c2:t})=>U(dh,{children:[g(ph,{children:"Hello There!"}),U(mh,{borderImage:`linear-gradient(
+`,gh=()=>U("form",{name:"contact","data-netlify":"true",children:[g("input",{type:"hidden",name:"form-name",value:"contact"}),g("p",{children:U("label",{children:["Name ",g("input",{type:"text",name:"name"})]})}),g("p",{children:U("label",{children:["Email Address",g("input",{type:"email",name:"email"})]})}),g("p",{children:U("label",{htmlFor:"form",children:["Message ",g("textarea",{id:"form",rows:1,cols:10})]})}),g("p",{children:g("button",{type:"submit",children:"Send"})})]}),yh=({c1:e,c2:t})=>U(dh,{children:[g(ph,{children:"Hello There!"}),U(mh,{borderImage:`linear-gradient(
       to bottom, 
       ${e}, 
       ${t}
