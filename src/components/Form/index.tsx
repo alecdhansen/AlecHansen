@@ -8,7 +8,8 @@ const Form = () => {
       </p>
       <p>
         <label>
-          Email <input type="email" name="email" />
+          Email Address
+          <input type="email" name="email" />
         </label>
       </p>
       <p>
