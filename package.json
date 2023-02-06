@@ -1,7 +1,6 @@
 {
   "name": "portfolio23",
   "version": "0.0.0",
-  "homepage": "https://alecdhansen.github.io/AlecHansen",
   "private": true,
   "type": "module",
   "scripts": {

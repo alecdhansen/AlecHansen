@@ -5,7 +5,7 @@ import NewspaperApp from "../Portfolio/NewspaperApp";
 import PixelPerfect from "../Portfolio/PixelPerfect";
 import { ContentContainer } from "./style";
 
-const FocusedContent: React.FC<Props> = ({ focus, setFocus, c1, c2 }) => {
+const FocusedContent: React.FC<Props> = ({ focus, c1, c2 }) => {
   let content;
   if (focus === 1) {
     content = <AboutMe c1={c1} c2={c2} />;
