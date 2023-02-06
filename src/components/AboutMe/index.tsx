@@ -6,6 +6,7 @@ import {
   Underline,
 } from "./style";
 import { Props } from "../../utils/types";
+import Form from "../Form";
 
 const AboutMe: React.FC<Props> = ({ c1, c2 }) => {
   return (
@@ -46,6 +47,7 @@ const AboutMe: React.FC<Props> = ({ c1, c2 }) => {
           Message Me!
         </Link>
       </Underline>
+      <Form />
     </AboutMeContainer>
   );
 };
