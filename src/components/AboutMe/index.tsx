@@ -1,8 +1,8 @@
 import {
   AboutMeContainer,
   BlurbContainer,
-  GreetingHeader,
   Link,
+  GreetingHeader,
   Underline,
 } from "./style";
 import { Props } from "../../utils/types";
