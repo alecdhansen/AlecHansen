@@ -74,7 +74,7 @@ export const LinksContainer = styled.div`
 `;
 
 export const Underline = styled.div<{ margin?: string }>`
-  transition: all 0.1s linear;
+  /* transition: all 0.1s linear; */
   margin: 0px 30px 10px 30px;
   @media (max-width: 1274px) {
     margin: ${({ margin }) => margin};
@@ -94,10 +94,10 @@ export const Link = styled.a<{
   line-height: 40px;
   margin: 10px 0 10px 0;
   cursor: pointer;
-  transition: 0.3s;
+  /* transition: 0.3s; */
   &:hover {
     border-image: ${({ hover }) => hover};
-    transition: 0.3s;
+    /* transition: 0.3s; */
   }
   @media (max-width: 1274px) {
     font-size: ${({ fontSize }) => fontSize};

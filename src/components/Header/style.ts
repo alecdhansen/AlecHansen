@@ -45,7 +45,7 @@ export const NavRight = styled.div`
 
 export const NavLink = styled.a`
   padding-left: 10px;
-  transition: all 0.1s ease-in-out;
+  /* transition: all 0.1s ease-in-out; */
   &:hover {
     transform: scale(1.2);
     animation: 1s;
@@ -68,7 +68,7 @@ export const AlecImage = styled.img<ImageProps>`
     to {
     }
   }
-  transition: all 0.1s ease-in-out;
+  /* transition: all 0.1s ease-in-out; */
   &:hover {
     transform: scale(1.1);
     animation: 1s;
