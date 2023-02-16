@@ -42,16 +42,15 @@ export const Underline = styled.div<{
   hPleft?: string;
   mLeft?: string;
 }>`
-  /* transition: all 0.1s linear; */
   margin: 10px 0 10px 0;
   transform: ${({ transform }) => transform};
   padding-left: ${({ pLeft }) => pLeft};
-  /* transition: 0.3s; */
+  transition: 0.3s;
   &:hover {
     transform: ${({ hTransform }) => hTransform};
     animation: 1s;
     padding-left: ${({ hPleft }) => hPleft};
-    /* transition: 0.3s; */
+    transition: 0.3s;
   }
   @media (max-width: 700px) {
     margin-left: ${({ mLeft }) => mLeft};
