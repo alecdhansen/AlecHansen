@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
-export const Button = styled.button<{ theme?: any }>`
-  background: ${({ theme }) => theme.background};
-  border: 2px solid ${({ theme }) => theme.toggleBorder};
-  color: ${({ theme }) => theme.text};
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 0.8rem;
-  padding: 0.6rem;
+export const Button = styled.a<{ theme?: any }>`
+  padding-left: 10px;
+  &:hover {
+    transform: scale(1.2);
+    animation: 1s;
+  }
 `;
