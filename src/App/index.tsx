@@ -17,15 +17,14 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../components/GlobalStyles";
 import { lightTheme, darkTheme } from "../components/Themes";
 import { useDarkMode } from "../hooks/useDarkMode";
-import Toggle from "../components/Toggler";
 
 const App = () => {
   const [c1, setC1] = useState(randomColor(appColors, 1));
   const [c2, setC2] = useState(randomColor(appColors, 2));
   const [focus, setFocus] = useState(1);
-  const [theme, themeToggler] = useDarkMode();
+  const [theme, themeToggler, mountedComponent] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
-
+  if (!mountedComponent) return <div />;
   return (
     <ThemeProvider theme={themeMode}>
       <>
