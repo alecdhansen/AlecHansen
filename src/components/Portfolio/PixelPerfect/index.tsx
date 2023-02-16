@@ -9,6 +9,7 @@ import {
   ContentContainer,
 } from "../style";
 import { TitleHeader, BlurbContainer } from "../style";
+import { pixelTech } from "../utils";
 
 const PixelPerfect: React.FC<Props> = ({ c1, c2 }) => {
   return (
@@ -29,8 +30,9 @@ const PixelPerfect: React.FC<Props> = ({ c1, c2 }) => {
           to match exactly the request of a client.
         </BlurbContainer>
         <TechnologiesContainer>
-          <TechnologyIcon>HTML5</TechnologyIcon>
-          <TechnologyIcon>CSS3</TechnologyIcon>
+          {pixelTech.map((tech) => (
+            <TechnologyIcon>{tech}</TechnologyIcon>
+          ))}
         </TechnologiesContainer>
         <LinksContainer>
           <Underline>

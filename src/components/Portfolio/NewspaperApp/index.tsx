@@ -11,6 +11,7 @@ import {
   SubItem,
 } from "../style";
 import { TitleHeader, BlurbContainer } from "../style";
+import { newspaperTech } from "../utils";
 
 const NewspaperApp: React.FC<Props> = ({ c1, c2 }) => {
   return (
@@ -41,13 +42,9 @@ const NewspaperApp: React.FC<Props> = ({ c1, c2 }) => {
           </SubItem>
         </SubContainer>
         <TechnologiesContainer>
-          <TechnologyIcon>React Js</TechnologyIcon>
-          <TechnologyIcon>Python</TechnologyIcon>
-          <TechnologyIcon>Django</TechnologyIcon>
-          <TechnologyIcon>Django REST Framework</TechnologyIcon>
-          <TechnologyIcon>React-Bootstrap</TechnologyIcon>
-          <TechnologyIcon>React-Router</TechnologyIcon>
-          <TechnologyIcon>Heroku</TechnologyIcon>
+          {newspaperTech.map((tech) => (
+            <TechnologyIcon>{tech}</TechnologyIcon>
+          ))}
         </TechnologiesContainer>
         <LinksContainer>
           <Underline>

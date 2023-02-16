@@ -9,6 +9,7 @@ import {
   ContentContainer,
 } from "../style";
 import { TitleHeader, BlurbContainer } from "../style";
+import { braggemTech } from "../utils";
 
 const Braggem: React.FC<Props> = ({ c1, c2 }) => {
   return (
@@ -30,15 +31,9 @@ const Braggem: React.FC<Props> = ({ c1, c2 }) => {
           your game-winner picking skills.
         </BlurbContainer>
         <TechnologiesContainer>
-          <TechnologyIcon>React Js</TechnologyIcon>
-          <TechnologyIcon>Python</TechnologyIcon>
-          <TechnologyIcon>Django</TechnologyIcon>
-          <TechnologyIcon>Django-Celery</TechnologyIcon>
-          <TechnologyIcon>React-Bootstrap</TechnologyIcon>
-          <TechnologyIcon>React-Router</TechnologyIcon>
-          <TechnologyIcon>Heroku</TechnologyIcon>
-          <TechnologyIcon>PostGres Database</TechnologyIcon>
-          <TechnologyIcon>NBA Schedule API</TechnologyIcon>
+          {braggemTech.map((tech) => (
+            <TechnologyIcon>{tech}</TechnologyIcon>
+          ))}
         </TechnologiesContainer>
         <LinksContainer>
           <Underline margin="0">
