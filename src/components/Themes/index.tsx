@@ -1,10 +1,17 @@
+const white = "rgb(255, 255, 255)";
+const black = "#212026";
+const whiteHover = "#FFF";
+const blackHover = "#51505d";
+
 export const lightTheme = {
-  backgroundColor: "rgb(255, 255, 255)",
-  color: "#212026",
-  toggleBorder: "#FFF",
+  backgroundColor: white,
+  color: black,
+  textHoverColor: blackHover,
+  border: black,
 };
 export const darkTheme = {
-  backgroundColor: "#212026",
-  color: "rgb(255, 255, 255)",
-  toggleBorder: "#6B8096",
+  backgroundColor: black,
+  color: white,
+  textHoverColor: whiteHover,
+  border: white,
 };
