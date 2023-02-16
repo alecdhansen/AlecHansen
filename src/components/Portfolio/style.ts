@@ -49,10 +49,10 @@ export const TechnologiesContainer = styled.div`
   flex-wrap: wrap;
   padding: 0 0 0 30px;
 `;
-export const TechnologyIcon = styled.span`
-  background-color: var(--dark);
-  color: var(--light);
-  border: 1px solid var(--light);
+export const TechnologyIcon = styled.span<{ theme?: string }>`
+  background-color: ${({ theme }) => theme.backgroundColor};
+  color: ${({ theme }) => theme.color};
+  border: 1px solid ${({ theme }) => theme.color};
   padding: 2px 6px;
   border-radius: 10px;
   font-size: 11px;
