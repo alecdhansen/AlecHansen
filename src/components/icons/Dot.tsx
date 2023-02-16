@@ -4,7 +4,7 @@ const DotIcon = () => {
       width="225px"
       height="225px"
       viewBox="-2.4 -2.4 28.80 28.80"
-      fill="none"
+      fill="#ffffff0"
       xmlns="http://www.w3.org/2000/svg"
     >
       \
@@ -24,7 +24,7 @@ const DotIcon = () => {
       <g id="SVGRepo_iconCarrier">
         <path
           d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z"
-          fill="var(--translucent)"
+          fill="#ffffff0"
         ></path>{" "}
       </g>
       \

@@ -7,8 +7,6 @@ const EmailIcon = () => {
       id="_x32_"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="-92.16 -92.16 696.32 696.32"
-      fill="var(--svgfill)"
-      stroke="var(--svgfill)"
       strokeWidth="0.00512"
     >
       <g

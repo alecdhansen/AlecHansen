@@ -72,4 +72,14 @@ a:hover {
     color: ${({ theme }) => theme.textHoverColor};
 }
 
+svg {
+  fill: ${({ theme }) => theme.backgroundColor};
+  stroke: ${({ theme }) => theme.backgroundColor};
+  transition: all 0.50s linear;
+}
+
+g {
+  fill: ${({ theme }) => theme.backgroundColor};
+  transition: all 0.50s linear;
+}
   `;
