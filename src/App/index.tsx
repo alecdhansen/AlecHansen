@@ -30,14 +30,18 @@ const App = () => {
     <ThemeProvider theme={themeMode}>
       <>
         <GlobalStyles />
-        <Toggle toggleTheme={themeToggler} />
         <AppContainer>
           <TopBorderContainer>
             <TopCornerBorder c1={c1} c2={c2} />
           </TopBorderContainer>
           <Container>
             <HeaderContainer>
-              <Header setFocus={setFocus} setC1={setC1} setC2={setC2} />
+              <Header
+                setFocus={setFocus}
+                setC1={setC1}
+                setC2={setC2}
+                themeToggler={themeToggler}
+              />
             </HeaderContainer>
             <MainContainer>
               <FocusedContent

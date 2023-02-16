@@ -6,4 +6,5 @@ export type Props = {
   c2?: string;
   setC1?: any;
   setC2?: any;
+  themeToggler?: any;
 };

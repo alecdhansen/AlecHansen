@@ -11,8 +11,9 @@ import DotIcon from "../icons/Dot";
 import { IconProps, icons } from "./types";
 import { Props } from "../../utils/types";
 import { appColors, randomColor } from "../../App/utils";
+import Toggle from "../Toggler";
 
-const Header: React.FC<Props> = ({ setFocus, setC1, setC2 }) => {
+const Header: React.FC<Props> = ({ setFocus, setC1, setC2, themeToggler }) => {
   const handleImageClick = () => {
     setFocus(1);
     setC1(randomColor(appColors, 1));
@@ -32,6 +33,7 @@ const Header: React.FC<Props> = ({ setFocus, setC1, setC2 }) => {
         />
       </NavLeft>
       <NavRight>
+        <Toggle toggleTheme={themeToggler} />
         {icons.map((icon: IconProps) => (
           <NavLink
             title={icon.title}
