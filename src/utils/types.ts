@@ -7,4 +7,5 @@ export type Props = {
   setC1?: any;
   setC2?: any;
   themeToggler?: any;
+  colorTheme?: any;
 };

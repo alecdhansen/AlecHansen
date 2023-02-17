@@ -22,8 +22,8 @@ const App = () => {
   const [c1, setC1] = useState(randomColor(appColors, 1));
   const [c2, setC2] = useState(randomColor(appColors, 2));
   const [focus, setFocus] = useState(1);
-  const [theme, themeToggler, mountedComponent] = useDarkMode();
-  const themeMode = theme === "light" ? lightTheme : darkTheme;
+  const [colorTheme, themeToggler, mountedComponent] = useDarkMode();
+  const themeMode = colorTheme === "light" ? lightTheme : darkTheme;
   if (!mountedComponent) return <div />;
   return (
     <ThemeProvider theme={themeMode}>
@@ -40,6 +40,7 @@ const App = () => {
                 setC1={setC1}
                 setC2={setC2}
                 themeToggler={themeToggler}
+                colorTheme={colorTheme}
               />
             </HeaderContainer>
             <MainContainer>
