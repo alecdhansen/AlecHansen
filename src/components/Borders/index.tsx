@@ -18,7 +18,7 @@ export const TopCornerBorder: React.FC<Props> = ({ c1, c2 }) => {
         </linearGradient>
       </defs>
       <path
-        fill={`url(#grad0`}
+        fill="url(#grad0"
         d="M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"
       ></path>
     </svg>
@@ -36,7 +36,7 @@ export const BottomCornerBorder = () => {
       data-inlinesvg=".inlineSvgFile-7"
     >
       <path
-        fill={`url(#grad0`}
+        fill="url(#grad0)"
         d="M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"
       ></path>
     </svg>
