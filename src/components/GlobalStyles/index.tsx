@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle<{ theme: any }>`
+
   :root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -31,6 +32,7 @@ export const GlobalStyles = createGlobalStyle<{ theme: any }>`
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  
 }
 
 h2 {
@@ -42,41 +44,28 @@ span {
   transition: all 0.50s linear;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: var(--dark);
-  cursor: pointer;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 a {
     color: ${({ theme }) => theme.color};
-    transition: all 0.50s linear;
     font-weight: 500;
     text-decoration: inherit;
+    transition: all 0.20s linear;
 }
 
 a:hover {
-    transition: all 0.10s linear;
+    transition: all 0.20s linear;
     color: ${({ theme }) => theme.textHoverColor};
 }
 
 svg {
   fill: ${({ theme }) => theme.backgroundColor};
   stroke: ${({ theme }) => theme.backgroundColor};
-  transition: all 0.50s linear;
+  transition: all 0.20s linear;
 }
-
+path {
+  transition: all 0.20s linear;
+}
 g {
   fill: ${({ theme }) => theme.backgroundColor};
-  transition: all 0.50s linear;
+  transition: all 0.20s linear;
 }
   `;

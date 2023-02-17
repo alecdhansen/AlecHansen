@@ -30,6 +30,7 @@ export const NavRight = styled.div`
   @media (max-width: 400px) {
     margin-right: 0%;
     margin-top: 40px;
+    margin-bottom: 40px;
     width: 100%;
     left: 0%;
     flex-wrap: wrap;
@@ -44,10 +45,11 @@ export const NavRight = styled.div`
 `;
 
 export const NavLink = styled.a`
-  padding-left: 10px;
+  padding: 0px 5px;
+  transition: all 0.2s linear;
   &:hover {
     transform: scale(1.2);
-    animation: 1s;
+    transition: all 0.2s linear;
   }
 `;
 
