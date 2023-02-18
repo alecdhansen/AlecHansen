@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ContainerProps, LinkProps, UnderlineProps } from "./types";
 
 export const ContentContainer = styled.div`
   width: 310px;
@@ -14,10 +15,7 @@ export const HeaderContent = styled.h3`
   padding: none;
   margin-bottom: 20px;
 `;
-export const ProjectNavContainer = styled.div<{
-  borderImage?: string;
-  hover?: string;
-}>`
+export const ProjectNavContainer = styled.div<ContainerProps>`
   border-image: ${({ borderImage }) => borderImage};
   border-top-width: 3px;
   border-top-style: solid;
@@ -35,13 +33,7 @@ export const LinkContainer = styled.div`
   flex-direction: column;
 `;
 
-export const Underline = styled.div<{
-  transform?: string;
-  hTransform?: string;
-  pLeft?: string;
-  hPleft?: string;
-  mLeft?: string;
-}>`
+export const Underline = styled.div<UnderlineProps>`
   margin: 10px 0 10px 0;
   transform: ${({ transform }) => transform};
   padding-left: ${({ pLeft }) => pLeft};
@@ -57,11 +49,7 @@ export const Underline = styled.div<{
   }
 `;
 
-export const Link = styled.a<{
-  borderImage?: string;
-  hover?: string;
-  cursor?: string;
-}>`
+export const Link = styled.a<LinkProps>`
   border-image: ${({ borderImage }) => borderImage};
   border-bottom-width: 3px;
   border-bottom-style: solid;

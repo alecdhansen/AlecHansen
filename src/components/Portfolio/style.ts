@@ -1,14 +1,18 @@
 import styled from "styled-components";
+import {
+  TitleProps,
+  ContentContainerProps,
+  UnderlineProps,
+  TechIconProps,
+  LinkProps,
+} from "./types";
 
 export const Container = styled.div`
   margin-top: 170px;
   margin-right: 10px;
 `;
 
-export const TitleHeader = styled.h2<{
-  fontSize?: string;
-  lineHeight?: string;
-}>`
+export const TitleHeader = styled.h2<TitleProps>`
   font-size: ${({ fontSize }) => fontSize};
   margin: 0 0 50px 0;
   pointer-events: none;
@@ -25,7 +29,7 @@ export const TitleHeader = styled.h2<{
   }
 `;
 
-export const ContentContainer = styled.div<{ borderImage?: string }>`
+export const ContentContainer = styled.div<ContentContainerProps>`
   border-image: ${({ borderImage }) => borderImage};
   border-left-width: 3px;
   border-left-style: solid;
@@ -49,7 +53,7 @@ export const TechnologiesContainer = styled.div`
   flex-wrap: wrap;
   padding: 0 0 0 30px;
 `;
-export const TechnologyIcon = styled.span<{ theme?: string }>`
+export const TechnologyIcon = styled.span<TechIconProps>`
   background-color: ${({ theme }) => theme.backgroundColor};
   color: ${({ theme }) => theme.color};
   border: 1px solid ${({ theme }) => theme.color};
@@ -73,20 +77,14 @@ export const LinksContainer = styled.div`
   width: 100%;
 `;
 
-export const Underline = styled.div<{ margin?: string }>`
-  /* transition: all 0.1s linear; */
+export const Underline = styled.div<UnderlineProps>`
   margin: 0px 30px 10px 30px;
   @media (max-width: 1274px) {
     margin: ${({ margin }) => margin};
   }
 `;
 
-export const Link = styled.a<{
-  borderImage?: string;
-  hover?: string;
-  fontSize?: string;
-  margin?: string;
-}>`
+export const Link = styled.a<LinkProps>`
   border-image: ${({ borderImage }) => borderImage};
   border-bottom-width: 3px;
   border-bottom-style: solid;
@@ -94,10 +92,8 @@ export const Link = styled.a<{
   line-height: 40px;
   margin: 10px 0 10px 0;
   cursor: pointer;
-  /* transition: 0.3s; */
   &:hover {
     border-image: ${({ hover }) => hover};
-    /* transition: 0.3s; */
   }
   @media (max-width: 1274px) {
     font-size: ${({ fontSize }) => fontSize};
