@@ -27,7 +27,6 @@ const ProjectSideBar: React.FC<Props> = ({ focus, setFocus, c1, c2 }) => {
         <LinkContainer>
           <Underline
             transform={focus === 2 ? "scale(1.3)" : ""}
-            // hTransform="scale(1.3)"
             pLeft={focus === 2 ? "27px" : ""}
             mLeft={focus === 2 ? "7px" : ""}
             hPleft={focus === 2 ? "-10px" : "10px"}
@@ -51,7 +50,6 @@ const ProjectSideBar: React.FC<Props> = ({ focus, setFocus, c1, c2 }) => {
           </Underline>
           <Underline
             transform={focus === 3 ? "scale(1.3)" : ""}
-            // hTransform="scale(1.3)"
             pLeft={focus === 3 ? "27px" : ""}
             mLeft={focus === 3 ? "7px" : ""}
             hPleft={focus === 3 ? "-10px" : "10px"}
@@ -75,7 +73,6 @@ const ProjectSideBar: React.FC<Props> = ({ focus, setFocus, c1, c2 }) => {
           </Underline>
           <Underline
             transform={focus === 4 ? "scale(1.3)" : ""}
-            // hTransform="scale(1.3)"
             pLeft={focus === 4 ? "27px" : ""}
             mLeft={focus === 4 ? "7px" : ""}
             hPleft={focus === 4 ? "-10px" : "10px"}
