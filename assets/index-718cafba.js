@@ -127,7 +127,6 @@ Error generating stack: `+i.message+`
     font-size: 14vw;
   }
 `,zh=U.div`
-  /* transition: all 0.1s linear; */
   margin-top: 20px;
   margin-left: 35px;
 `,Nh=U.p`
@@ -141,10 +140,8 @@ Error generating stack: `+i.message+`
   border-bottom-width: 3px;
   border-bottom-style: solid;
   cursor: pointer;
-  /* transition: 0.3s; */
   &:hover {
     border-image: ${({hover:e})=>e};
-    /* transition: 0.3s; */
   }
 `,Th=({c1:e,c2:t})=>H($h,{children:[y(Ph,{children:"Hello There!"}),H(Nh,{borderImage:`linear-gradient(
       to bottom, 
@@ -213,7 +210,6 @@ Error generating stack: `+i.message+`
   justify-content: flex-start;
   width: 100%;
 `,on=U.div`
-  /* transition: all 0.1s linear; */
   margin: 0px 30px 10px 30px;
   @media (max-width: 1274px) {
     margin: ${({margin:e})=>e};
@@ -226,10 +222,8 @@ Error generating stack: `+i.message+`
   line-height: 40px;
   margin: 10px 0 10px 0;
   cursor: pointer;
-  /* transition: 0.3s; */
   &:hover {
     border-image: ${({hover:e})=>e};
-    /* transition: 0.3s; */
   }
   @media (max-width: 1274px) {
     font-size: ${({fontSize:e})=>e};
