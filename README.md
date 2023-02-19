@@ -1,4 +1,4 @@
-Here's my personal portfolio site! It's built in React and TypeScript using Vite.
+<h2>Here's my personal portfolio site! It's built in React and TypeScript using Vite.</h2>
 
-https://alechansen.me/
+<span>https://alechansen.me/</span>
 
