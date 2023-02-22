@@ -2,10 +2,11 @@ import React from "react";
 import LightbulbFilled from "../icons/LightbulbFilled";
 import { Button } from "./style";
 import { ButtonProps } from "./types";
+import { titleToggler } from "./utils";
 
 const Toggle: React.FC<ButtonProps> = ({ toggleTheme, colorTheme }) => {
   return (
-    <Button as="button" onClick={toggleTheme}>
+    <Button as="button" title={titleToggler(colorTheme)} onClick={toggleTheme}>
       <LightbulbFilled colorTheme={colorTheme} />
     </Button>
   );
