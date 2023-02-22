@@ -109,12 +109,12 @@ Error generating stack: `+i.message+`
     transform: scale(1.2);
     transition: all 0.2s linear;
   }
-`,xh=({toggleTheme:e,colorTheme:t})=>y(kh,{as:"button",onClick:e,children:y(Sh,{colorTheme:t})}),Ch=({setFocus:e,setC1:t,setC2:n,themeToggler:r,colorTheme:l})=>H(th,{children:[H(nh,{children:[y(oh,{children:y(ah,{})}),y(ih,{onClick:()=>{e(1),t(bl(ei,1)),n(bl(ei,2))},style:{position:"absolute"},src:uh})]}),H(rh,{children:[y(xh,{toggleTheme:r,colorTheme:l}),ph.map(o=>y(lh,{title:o.title,href:o.url,target:"_blank",children:o.icon},o.content))]})]}),Eh=({c1:e,c2:t})=>H("svg",{width:"300",height:"300","data-name":"corner-top-left",xmlns:"http://www.w3.org/2000/svg",style:{pointerEvents:"none"},"data-inlinesvg":".inlineSvgFile-1",children:[y("defs",{children:H("linearGradient",{id:"grad0",x1:"0%",y1:"0%",x2:"100%",y2:"100%",children:[y("stop",{offset:"0",stopColor:e}),y("stop",{offset:".5",stopColor:t}),y("stop",{offset:"1",stopColor:e})]})}),y("path",{fill:"url(#grad0",d:"M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"})]}),_h=()=>y("svg",{width:"300",height:"300","data-name":"corner-bottom-right",xmlns:"http://www.w3.org/2000/svg",style:{pointerEvents:"none"},"data-inlinesvg":".inlineSvgFile-7",children:y("path",{fill:"url(#grad0)",d:"M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"})}),$h=U.div`
+`,xh=e=>e==="light"?"Turn off the lights!":"Turn on the lights!",Ch=({toggleTheme:e,colorTheme:t})=>y(kh,{as:"button",title:xh(t),onClick:e,children:y(Sh,{colorTheme:t})}),Eh=({setFocus:e,setC1:t,setC2:n,themeToggler:r,colorTheme:l})=>H(th,{children:[H(nh,{children:[y(oh,{children:y(ah,{})}),y(ih,{onClick:()=>{e(1),t(bl(ei,1)),n(bl(ei,2))},style:{position:"absolute"},src:uh})]}),H(rh,{children:[y(Ch,{toggleTheme:r,colorTheme:l}),ph.map(o=>y(lh,{title:o.title,href:o.url,target:"_blank",children:o.icon},o.content))]})]}),_h=({c1:e,c2:t})=>H("svg",{width:"300",height:"300","data-name":"corner-top-left",xmlns:"http://www.w3.org/2000/svg",style:{pointerEvents:"none"},"data-inlinesvg":".inlineSvgFile-1",children:[y("defs",{children:H("linearGradient",{id:"grad0",x1:"0%",y1:"0%",x2:"100%",y2:"100%",children:[y("stop",{offset:"0",stopColor:e}),y("stop",{offset:".5",stopColor:t}),y("stop",{offset:"1",stopColor:e})]})}),y("path",{fill:"url(#grad0",d:"M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"})]}),$h=()=>y("svg",{width:"300",height:"300","data-name":"corner-bottom-right",xmlns:"http://www.w3.org/2000/svg",style:{pointerEvents:"none"},"data-inlinesvg":".inlineSvgFile-7",children:y("path",{fill:"url(#grad0)",d:"M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"})}),Ph=U.div`
   display: flex;
   flex-direction: column;
   margin-top: 170px;
   width: 100%;
-`,Ph=U.h2`
+`,zh=U.h2`
   font-size: 6vw;
   margin: 0 0 33px 0;
   line-height: 3rem;
@@ -126,16 +126,16 @@ Error generating stack: `+i.message+`
   @media (min-width: 401px) and (max-width: 800px) {
     font-size: 14vw;
   }
-`,zh=U.div`
+`,Nh=U.div`
   margin-top: 20px;
   margin-left: 35px;
-`,Nh=U.p`
+`,Lh=U.p`
   border-image: ${({borderImage:e})=>e};
   border-left-width: 3px;
   border-left-style: solid;
   padding: 0 0 0 30px;
   font-size: 18px;
-`,Lh=U.a`
+`,Th=U.a`
   border-image: ${({borderImage:e})=>e};
   border-bottom-width: 3px;
   border-bottom-style: solid;
@@ -143,11 +143,11 @@ Error generating stack: `+i.message+`
   &:hover {
     border-image: ${({hover:e})=>e};
   }
-`,Th=({c1:e,c2:t})=>H($h,{children:[y(Ph,{children:"Hello There!"}),H(Nh,{borderImage:`linear-gradient(
+`,Rh=({c1:e,c2:t})=>H(Ph,{children:[y(zh,{children:"Hello There!"}),H(Lh,{borderImage:`linear-gradient(
       to bottom, 
       ${e}, 
       ${t}
-    ) 1 100%;`,children:["My name is Alec Hansen. I'm a software developer currently residing in Greenville, South Carolina, USA. Coding has changed my life! My previous career molded in me a strong background in client care and team management. I now use these skills to build web and mobile applications with a great attention to detail and (when with a team) I collaborate with others thoughtfully and efficiently.",y("br",{}),y("br",{}),"I'm looking for my next opportunity. Let me generate solutions that fit your needs!"]}),y(zh,{children:y(Lh,{href:"mailto:alecdhansen@gmail.com",borderImage:`linear-gradient(
+    ) 1 100%;`,children:["My name is Alec Hansen. I'm a software developer currently residing in Greenville, South Carolina, USA. Coding has changed my life! My previous career molded in me a strong background in client care and team management. I now use these skills to build web and mobile applications with a great attention to detail and (when with a team) I collaborate with others thoughtfully and efficiently.",y("br",{}),y("br",{}),"I'm looking for my next opportunity. Let me generate solutions that fit your needs!"]}),y(Nh,{children:y(Th,{href:"mailto:alecdhansen@gmail.com",borderImage:`linear-gradient(
         to left,
         ${e},
         ${t}
@@ -180,7 +180,7 @@ Error generating stack: `+i.message+`
 `,Ea=U.p`
   padding: 0 0 0 30px;
   font-size: 18px;
-`,Rh=U.div`
+`,Ih=U.div`
   padding-left: 60px;
   margin-bottom: 30px;
 `,mo=U.p`
@@ -230,11 +230,11 @@ Error generating stack: `+i.message+`
     margin: ${({margin:e})=>e};
     padding: 0;
   }
-`,Ih=["React Js","Python","Django","Django-Celery","Django REST Framework","React-Bootstrap","React-Router","Heroku","PostGres Database","NBA Schedule API"],Ah=["React Js","Python","Django","Django REST Framework","React-Bootstrap","React-Router","Heroku"],Mh=["HTML5","CSS3"],Oh=({c1:e,c2:t})=>H(ka,{children:[y(xa,{fontSize:"85px",lineHeight:"3rem",children:"Braggem"}),H(Ca,{borderImage:`linear-gradient(
+`,Ah=["React Js","Python","Django","Django-Celery","Django REST Framework","React-Bootstrap","React-Router","Heroku","PostGres Database","NBA Schedule API"],Mh=["React Js","Python","Django","Django REST Framework","React-Bootstrap","React-Router","Heroku"],Oh=["HTML5","CSS3"],jh=({c1:e,c2:t})=>H(ka,{children:[y(xa,{fontSize:"85px",lineHeight:"3rem",children:"Braggem"}),H(Ca,{borderImage:`linear-gradient(
       to bottom, 
       ${e}, 
       ${t}
-    ) 1 100%;`,children:[y(Ea,{children:"Braggem was built to provide users an exciting experience while following the NBA season. Predict game winners, view leaderboard, challenge other users, and customize your profile while showcasing your game-winner picking skills."}),y(_a,{children:Ih.map(n=>y($a,{children:n}))}),H(Pa,{children:[y(on,{margin:"0",children:y(un,{href:"https://braggem.herokuapp.com/",target:"_blank",fontSize:"14px",borderImage:`linear-gradient(
+    ) 1 100%;`,children:[y(Ea,{children:"Braggem was built to provide users an exciting experience while following the NBA season. Predict game winners, view leaderboard, challenge other users, and customize your profile while showcasing your game-winner picking skills."}),y(_a,{children:Ah.map(n=>y($a,{children:n}))}),H(Pa,{children:[y(on,{margin:"0",children:y(un,{href:"https://braggem.herokuapp.com/",target:"_blank",fontSize:"14px",borderImage:`linear-gradient(
         to left,
         ${e},
         ${t}
@@ -258,11 +258,11 @@ Error generating stack: `+i.message+`
         to left,
         ${t},
         ${e}
-      ) 1 10%;`,children:"Youtube Walkthrough"})})]})]})]}),jh=({c1:e,c2:t})=>H(ka,{children:[y(xa,{fontSize:"80px",lineHeight:"4rem",children:"Newspaper App"}),H(Ca,{borderImage:`linear-gradient(
+      ) 1 10%;`,children:"Youtube Walkthrough"})})]})]})]}),Dh=({c1:e,c2:t})=>H(ka,{children:[y(xa,{fontSize:"80px",lineHeight:"4rem",children:"Newspaper App"}),H(Ca,{borderImage:`linear-gradient(
       to bottom, 
       ${e}, 
       ${t}
-    ) 1 100%;`,children:[y(Ea,{children:"Full CRUD application designed for three distinct user types:"}),H(Rh,{children:[y(mo,{children:"● The general user is able to view articles on the homepage."}),y(mo,{children:"● Authors are able to write articles and submit for review."}),y(mo,{children:"● The editor is able to approve articles for publication or reject those articles."})]}),y(_a,{children:Ah.map(n=>y($a,{children:n}))}),H(Pa,{children:[y(on,{children:y(un,{href:"https://newspaper-app-alecdhansen.herokuapp.com/",target:"_blank",borderImage:`linear-gradient(
+    ) 1 100%;`,children:[y(Ea,{children:"Full CRUD application designed for three distinct user types:"}),H(Ih,{children:[y(mo,{children:"● The general user is able to view articles on the homepage."}),y(mo,{children:"● Authors are able to write articles and submit for review."}),y(mo,{children:"● The editor is able to approve articles for publication or reject those articles."})]}),y(_a,{children:Mh.map(n=>y($a,{children:n}))}),H(Pa,{children:[y(on,{children:y(un,{href:"https://newspaper-app-alecdhansen.herokuapp.com/",target:"_blank",borderImage:`linear-gradient(
         to left,
         ${e},
         ${t}
@@ -278,11 +278,11 @@ Error generating stack: `+i.message+`
         to left,
         ${t},
         ${e}
-      ) 1 10%;`,children:"Github Repo"})})]})]})]}),Dh=({c1:e,c2:t})=>H(ka,{children:[y(xa,{fontSize:"80px",lineHeight:"4rem",children:"Pixel Perfect"}),H(Ca,{borderImage:`linear-gradient(
+      ) 1 10%;`,children:"Github Repo"})})]})]})]}),Fh=({c1:e,c2:t})=>H(ka,{children:[y(xa,{fontSize:"80px",lineHeight:"4rem",children:"Pixel Perfect"}),H(Ca,{borderImage:`linear-gradient(
       to bottom, 
       ${e}, 
       ${t}
-    ) 1 100%;`,children:[y(Ea,{children:"Responsive recreation of a blog site that mirrors every element down to the pixel. This project showcases my skill to combine HTML and CSS to match exactly the request of a client."}),y(_a,{children:Mh.map(n=>y($a,{children:n}))}),H(Pa,{children:[y(on,{children:y(un,{href:"https://alecdhansen.github.io/pixel-perfect/",target:"_blank",borderImage:`linear-gradient(
+    ) 1 100%;`,children:[y(Ea,{children:"Responsive recreation of a blog site that mirrors every element down to the pixel. This project showcases my skill to combine HTML and CSS to match exactly the request of a client."}),y(_a,{children:Oh.map(n=>y($a,{children:n}))}),H(Pa,{children:[y(on,{children:y(un,{href:"https://alecdhansen.github.io/pixel-perfect/",target:"_blank",borderImage:`linear-gradient(
         to left,
         ${e},
         ${t}
@@ -298,13 +298,13 @@ Error generating stack: `+i.message+`
         to left,
         ${t},
         ${e}
-      ) 1 10%;`,children:"Github Repo"})})]})]})]}),Fh=U.div`
+      ) 1 10%;`,children:"Github Repo"})})]})]})]}),Uh=U.div`
   width: 75%;
   padding-right: 10%;
   @media (max-width: 800px) {
     width: 100%;
   }
-`,Uh=({focus:e,c1:t,c2:n})=>{let r;return e===1&&(r=y(Th,{c1:t,c2:n})),e===2&&(r=y(Oh,{c1:t,c2:n})),e===3&&(r=y(jh,{c1:t,c2:n})),e===4&&(r=y(Dh,{c1:t,c2:n})),y(Fh,{children:r})},Vh=U.div`
+`,Vh=({focus:e,c1:t,c2:n})=>{let r;return e===1&&(r=y(Rh,{c1:t,c2:n})),e===2&&(r=y(jh,{c1:t,c2:n})),e===3&&(r=y(Dh,{c1:t,c2:n})),e===4&&(r=y(Fh,{c1:t,c2:n})),y(Uh,{children:r})},Bh=U.div`
   width: 310px;
   display: flex;
   flex-direction: column;
@@ -312,11 +312,11 @@ Error generating stack: `+i.message+`
   @media (max-width: 600px) {
     margin-top: 50px;
   }
-`,Bh=U.h3`
+`,Hh=U.h3`
   font-size: 30px;
   padding: none;
   margin-bottom: 20px;
-`,Hh=U.div`
+`,Wh=U.div`
   border-image: ${({borderImage:e})=>e};
   border-top-width: 3px;
   border-top-style: solid;
@@ -327,7 +327,7 @@ Error generating stack: `+i.message+`
   &:hover {
     border-image: ${({hover:e})=>e};
   }
-`,Wh=U.div`
+`,Qh=U.div`
   display: flex;
   flex-direction: column;
 `,cl=U.div`
@@ -355,7 +355,7 @@ Error generating stack: `+i.message+`
   &:hover {
     border-image: ${({hover:e})=>e};
   }
-`,Qh=({focus:e,setFocus:t,c1:n,c2:r})=>H(Vh,{children:[y(Bh,{children:"Projects"}),y(Hh,{borderImage:`linear-gradient(
+`,Gh=({focus:e,setFocus:t,c1:n,c2:r})=>H(Bh,{children:[y(Hh,{children:"Projects"}),y(Wh,{borderImage:`linear-gradient(
         to right,
         ${n},
         ${r}
@@ -363,7 +363,7 @@ Error generating stack: `+i.message+`
         to right,
         ${r},
         ${n}
-      ) 1 40%;`,children:H(Wh,{children:[y(cl,{transform:e===2?"scale(1.3)":"",pLeft:e===2?"27px":"",mLeft:e===2?"7px":"",hPleft:e===2?"-10px":"10px",children:y(fl,{onClick:()=>t(2),cursor:"pointer",borderImage:`linear-gradient(
+      ) 1 40%;`,children:H(Qh,{children:[y(cl,{transform:e===2?"scale(1.3)":"",pLeft:e===2?"27px":"",mLeft:e===2?"7px":"",hPleft:e===2?"-10px":"10px",children:y(fl,{onClick:()=>t(2),cursor:"pointer",borderImage:`linear-gradient(
         to left,
         ${n},
         ${r}
@@ -395,7 +395,7 @@ Error generating stack: `+i.message+`
               to left,
               ${r},
               ${n}
-            ) 1 10%;`,children:"This Website!"})})]})})]}),Gh=Y1`
+            ) 1 10%;`,children:"This Website!"})})]})})]}),Yh=Y1`
 
   :root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -463,4 +463,4 @@ g {
   fill: ${({theme:e})=>e.backgroundColor};
   transition: all 0.20s linear;
 }
-  `,Yh=()=>{const[e,t]=de.useState("light"),[n,r]=de.useState(!1),l=o=>{window.localStorage.setItem("theme",o),t(o)},i=()=>{l(e==="light"?"dark":"light")};return de.useEffect(()=>{const o=window.localStorage.getItem("theme");o&&t(o),r(!0)},[]),[e,i,n]},Kh=()=>{const[e,t]=de.useState(bl(ei,1)),[n,r]=de.useState(bl(ei,2)),[l,i]=de.useState(1),[o,u,a]=Yh(),c=o==="light"?yh:wh;return a?y(Q1,{theme:c,children:H(Hd,{children:[y(Gh,{}),H(K1,{children:[y(X1,{children:y(Eh,{c1:e,c2:n})}),H(q1,{children:[y(b1,{children:y(Ch,{setFocus:i,setC1:t,setC2:r,themeToggler:u,colorTheme:o})}),H(eh,{children:[y(Uh,{focus:l,setFocus:i,c1:e,c2:n}),y(Qh,{focus:l,setFocus:i,c1:e,c2:n})]})]}),H(Z1,{transform:hh(l),mTransform:"translateY(-200px)",children:[y(_h,{}),y(J1,{children:"© Alec Hansen, 2023"})]})]})]})}):y("div",{})};go.createRoot(document.getElementById("root")).render(y(mn.StrictMode,{children:y(Kh,{})}));
+  `,Kh=()=>{const[e,t]=de.useState("light"),[n,r]=de.useState(!1),l=o=>{window.localStorage.setItem("theme",o),t(o)},i=()=>{l(e==="light"?"dark":"light")};return de.useEffect(()=>{const o=window.localStorage.getItem("theme");o&&t(o),r(!0)},[]),[e,i,n]},Xh=()=>{const[e,t]=de.useState(bl(ei,1)),[n,r]=de.useState(bl(ei,2)),[l,i]=de.useState(1),[o,u,a]=Kh(),c=o==="light"?yh:wh;return a?y(Q1,{theme:c,children:H(Hd,{children:[y(Yh,{}),H(K1,{children:[y(X1,{children:y(_h,{c1:e,c2:n})}),H(q1,{children:[y(b1,{children:y(Eh,{setFocus:i,setC1:t,setC2:r,themeToggler:u,colorTheme:o})}),H(eh,{children:[y(Vh,{focus:l,setFocus:i,c1:e,c2:n}),y(Gh,{focus:l,setFocus:i,c1:e,c2:n})]})]}),H(Z1,{transform:hh(l),mTransform:"translateY(-200px)",children:[y($h,{}),y(J1,{children:"© Alec Hansen, 2023"})]})]})]})}):y("div",{})};go.createRoot(document.getElementById("root")).render(y(mn.StrictMode,{children:y(Xh,{})}));
