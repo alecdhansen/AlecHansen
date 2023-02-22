@@ -1,4 +1,4 @@
-export const titleToggler = (colorTheme: any) => {
+export const titleToggler = (colorTheme: string) => {
   if (colorTheme === "light") {
     return "Turn off the lights!";
   }
