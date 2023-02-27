@@ -32,6 +32,16 @@ const App = () => {
         <AppContainer>
           <TopBorderContainer>
             <TopCornerBorder c1={c1} c2={c2} />
+            <input
+              type="color"
+              onChange={(e: any) => setC1(e.target.value)}
+              defaultValue={c1}
+            />
+            <input
+              type="color"
+              onChange={(e: any) => setC2(e.target.value)}
+              defaultValue={c2}
+            />
           </TopBorderContainer>
           <Container>
             <HeaderContainer>
