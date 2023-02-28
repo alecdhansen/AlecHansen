@@ -14,6 +14,7 @@ import { Props } from "../../utils/types";
 import { appColors, randomColor } from "../../App/utils";
 import Toggle from "../Toggler";
 import ColorPicker from "../icons/ColorPicker";
+import { useState } from "react";
 
 const Header: React.FC<Props> = ({
   setFocus,
@@ -21,7 +22,10 @@ const Header: React.FC<Props> = ({
   setC2,
   themeToggler,
   colorTheme,
+  c1,
+  c2,
 }) => {
+  const [open, setOpen] = useState(false);
   const handleImageClick = () => {
     setFocus(1);
     setC1(randomColor(appColors, 1));
@@ -42,9 +46,26 @@ const Header: React.FC<Props> = ({
       </NavLeft>
       <NavRight>
         <Toggle toggleTheme={themeToggler} colorTheme={colorTheme} />
-        <IconContainer title="Click me to customize theme color!">
+        <IconContainer
+          title="Click me to customize theme color!"
+          onClick={() => setOpen(true)}
+        >
           <ColorPicker />
         </IconContainer>
+        {open && (
+          <>
+            <input
+              type="color"
+              onChange={(e: any) => setC1(e.target.value)}
+              defaultValue={c1}
+            />
+            <input
+              type="color"
+              onChange={(e: any) => setC2(e.target.value)}
+              defaultValue={c2}
+            />
+          </>
+        )}
         {icons.map((icon: IconProps) => (
           <NavLink
             title={icon.title}
