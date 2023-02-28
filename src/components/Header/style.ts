@@ -14,7 +14,7 @@ export const NavLeft = styled.div`
   width: 50%;
   display: flex;
   justify-content: flex-start;
-  z-index: 50;
+  z-index: 100;
   @media (max-width: 800px) {
     margin-left: 5%;
     width: 100%;
@@ -87,5 +87,24 @@ export const IconContainer = styled.div`
   &:hover {
     transform: scale(1.2);
     transition: all 0.2s linear;
+  }
+`;
+
+export const ColorInput = styled.input.attrs(() => ({
+  className: "animate__animated animate__zoomIn",
+}))`
+  -webkit-appearance: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin: 0px 2px;
+  border-radius: 50%;
+  ::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%;
+  }
+  ::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
   }
 `;
