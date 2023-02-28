@@ -5,6 +5,7 @@ import {
   AlecImage,
   DotContainer,
   NavLink,
+  IconContainer,
 } from "./style";
 import image from "../../assets/images/alecwhite.png";
 import DotIcon from "../icons/Dot";
@@ -12,6 +13,7 @@ import { IconProps, icons } from "./types";
 import { Props } from "../../utils/types";
 import { appColors, randomColor } from "../../App/utils";
 import Toggle from "../Toggler";
+import ColorPicker from "../icons/ColorPicker";
 
 const Header: React.FC<Props> = ({
   setFocus,
@@ -40,6 +42,9 @@ const Header: React.FC<Props> = ({
       </NavLeft>
       <NavRight>
         <Toggle toggleTheme={themeToggler} colorTheme={colorTheme} />
+        <IconContainer title="Click me to customize theme color!">
+          <ColorPicker />
+        </IconContainer>
         {icons.map((icon: IconProps) => (
           <NavLink
             title={icon.title}

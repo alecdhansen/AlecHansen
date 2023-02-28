@@ -80,3 +80,12 @@ export const AlecImage = styled.img<ImageProps>`
 export const DotContainer = styled.a`
   margin-top: 180px;
 `;
+
+export const IconContainer = styled.div`
+  padding: 0px 5px;
+  transition: all 0.2s linear;
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.2s linear;
+  }
+`;
