@@ -47,15 +47,6 @@ const Header: React.FC<Props> = ({
         />
       </NavLeft>
       <NavRight>
-        <Toggle toggleTheme={themeToggler} colorTheme={colorTheme} />
-        <IconContainer
-          title={
-            open ? "Close color picker" : "Click me to customize theme color!"
-          }
-          onClick={() => (!open ? setOpen(true) : setOpen(false))}
-        >
-          <ColorPicker colorTheme={colorTheme} open={open} />
-        </IconContainer>
         {open && (
           <>
             <ColorInput
@@ -74,6 +65,17 @@ const Header: React.FC<Props> = ({
             />
           </>
         )}
+        <IconContainer
+          title={
+            open ? "Close color picker" : "Click me to customize theme color!"
+          }
+          transform={open ? "scale(1.2)" : ""}
+          onClick={() => (!open ? setOpen(true) : setOpen(false))}
+        >
+          <ColorPicker colorTheme={colorTheme} open={open} />
+        </IconContainer>
+        <Toggle toggleTheme={themeToggler} colorTheme={colorTheme} />
+
         {icons.map((icon: IconProps) => (
           <NavLink
             title={icon.title}

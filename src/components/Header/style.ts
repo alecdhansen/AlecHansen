@@ -81,9 +81,11 @@ export const DotContainer = styled.a`
   margin-top: 180px;
 `;
 
-export const IconContainer = styled.div`
+export const IconContainer = styled.div<{ transform?: string }>`
   padding: 0px 5px;
   transition: all 0.2s linear;
+  transform: ${({ transform }) => transform};
+  cursor: pointer;
   &:hover {
     transform: scale(1.2);
     transition: all 0.2s linear;
@@ -93,6 +95,7 @@ export const IconContainer = styled.div`
 export const ColorInput = styled.input.attrs(() => ({
   className: "animate__animated animate__zoomIn",
 }))`
+  cursor: pointer;
   -webkit-appearance: none;
   border: none;
   width: 40px;
