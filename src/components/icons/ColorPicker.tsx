@@ -7,10 +7,10 @@ type ColorPickerProps = {
 
 const ColorPicker = ({ colorTheme, open }: ColorPickerProps) => {
   const themeChecker = (colorTheme: any, open: any) => {
-    if (colorTheme === "light" && open === true) {
+    if (colorTheme === "light" && open) {
       return black;
     }
-    if (colorTheme === "dark" && open === true) {
+    if (colorTheme === "dark" && open) {
       return white;
     }
   };

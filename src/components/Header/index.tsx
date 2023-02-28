@@ -49,7 +49,9 @@ const Header: React.FC<Props> = ({
       <NavRight>
         <Toggle toggleTheme={themeToggler} colorTheme={colorTheme} />
         <IconContainer
-          title="Click me to customize theme color!"
+          title={
+            open ? "Close color picker" : "Click me to customize theme color!"
+          }
           onClick={() => (!open ? setOpen(true) : setOpen(false))}
         >
           <ColorPicker colorTheme={colorTheme} open={open} />
