@@ -242,7 +242,7 @@ Error generating stack: `+i.message+`
       to bottom, 
       ${e}, 
       ${t}
-    ) 1 100%;`,children:[v(_a,{children:"Braggem was built to provide users an exciting experience while following the NBA season. Predict game winners, view leaderboard, challenge other users, and customize your profile while showcasing your game-winner picking skills."}),v(Ea,{children:Dh.map(n=>v($a,{children:n}))}),H(Pa,{children:[v(on,{margin:"0",children:v(un,{href:"https://braggem.herokuapp.com/",target:"_blank",fontSize:"14px",borderImage:`linear-gradient(
+    ) 1 100%;`,children:[v(_a,{children:"Braggem was built to provide users an exciting experience while following the NBA season. Predict game winners, view leaderboard, challenge other users, and customize your profile while showcasing your game-winner picking skills."}),v(Ea,{children:Dh.map((n,r)=>v($a,{children:n},r))}),H(Pa,{children:[v(on,{margin:"0",children:v(un,{href:"https://braggem.herokuapp.com/",target:"_blank",fontSize:"14px",borderImage:`linear-gradient(
         to left,
         ${e},
         ${t}
@@ -270,7 +270,7 @@ Error generating stack: `+i.message+`
       to bottom, 
       ${e}, 
       ${t}
-    ) 1 100%;`,children:[v(_a,{children:"Full CRUD application designed for three distinct user types:"}),H(jh,{children:[v(go,{children:"● The general user is able to view articles on the homepage."}),v(go,{children:"● Authors are able to write articles and submit for review."}),v(go,{children:"● The editor is able to approve articles for publication or reject those articles."})]}),v(Ea,{children:Fh.map(n=>v($a,{children:n}))}),H(Pa,{children:[v(on,{children:v(un,{href:"https://newspaper-app-alecdhansen.herokuapp.com/",target:"_blank",borderImage:`linear-gradient(
+    ) 1 100%;`,children:[v(_a,{children:"Full CRUD application designed for three distinct user types:"}),H(jh,{children:[v(go,{children:"● The general user is able to view articles on the homepage."}),v(go,{children:"● Authors are able to write articles and submit for review."}),v(go,{children:"● The editor is able to approve articles for publication or reject those articles."})]}),v(Ea,{children:Fh.map((n,r)=>v($a,{children:n},r))}),H(Pa,{children:[v(on,{children:v(un,{href:"https://newspaper-app-alecdhansen.herokuapp.com/",target:"_blank",borderImage:`linear-gradient(
         to left,
         ${e},
         ${t}
@@ -290,7 +290,7 @@ Error generating stack: `+i.message+`
       to bottom, 
       ${e}, 
       ${t}
-    ) 1 100%;`,children:[v(_a,{children:"Responsive recreation of a blog site that mirrors every element down to the pixel. This project showcases my skill to combine HTML and CSS to match exactly the request of a client."}),v(Ea,{children:Vh.map(n=>v($a,{children:n}))}),H(Pa,{children:[v(on,{children:v(un,{href:"https://alecdhansen.github.io/pixel-perfect/",target:"_blank",borderImage:`linear-gradient(
+    ) 1 100%;`,children:[v(_a,{children:"Responsive recreation of a blog site that mirrors every element down to the pixel. This project showcases my skill to combine HTML and CSS to match exactly the request of a client."}),v(Ea,{children:Vh.map((n,r)=>v($a,{children:n},r))}),H(Pa,{children:[v(on,{children:v(un,{href:"https://alecdhansen.github.io/pixel-perfect/",target:"_blank",borderImage:`linear-gradient(
         to left,
         ${e},
         ${t}
@@ -338,6 +338,7 @@ Error generating stack: `+i.message+`
 `,Xh=V.div`
   display: flex;
   flex-direction: column;
+  -webkit-tap-highlight-color: transparent;
 `,fl=V.div`
   margin: 10px 0 10px 0;
   transform: ${({transform:e})=>e};
