@@ -7,12 +7,16 @@ import {
   LinkProps,
 } from "./types";
 
-export const Container = styled.div`
+export const Container = styled.div.attrs(() => ({
+  className: "animate__animated animate__fadeIn",
+}))`
   margin-top: 170px;
   margin-right: 10px;
 `;
 
-export const TitleHeader = styled.h2<TitleProps>`
+export const TitleHeader = styled.h2.attrs(() => ({
+  className: "animate__animated animate__flipInX",
+}))<TitleProps>`
   font-size: ${({ fontSize }) => fontSize};
   margin: 0 0 50px 0;
   pointer-events: none;
@@ -29,7 +33,9 @@ export const TitleHeader = styled.h2<TitleProps>`
   }
 `;
 
-export const ContentContainer = styled.div<ContentContainerProps>`
+export const ContentContainer = styled.div.attrs(() => ({
+  className: "animate__animated animate__slideInRight",
+}))<ContentContainerProps>`
   border-image: ${({ borderImage }) => borderImage};
   border-left-width: 3px;
   border-left-style: solid;

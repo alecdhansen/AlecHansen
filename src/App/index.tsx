@@ -37,6 +37,8 @@ const App = () => {
             <HeaderContainer>
               <Header
                 setFocus={setFocus}
+                c1={c1}
+                c2={c2}
                 setC1={setC1}
                 setC2={setC2}
                 themeToggler={themeToggler}

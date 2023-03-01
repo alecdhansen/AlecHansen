@@ -8,7 +8,9 @@ export const AppContainer = styled.div`
 export const TopBorderContainer = styled.div`
   left: 5%;
   pointer-events: none;
+  z-index: 60;
   position: absolute;
+  display: flex;
   @media (max-width: 800px) {
     left: 0%;
   }

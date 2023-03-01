@@ -7,6 +7,7 @@ import {
 } from "./style";
 import { Props } from "../../utils/types";
 import Form from "../Form";
+import "animate.css";
 
 const AboutMe: React.FC<Props> = ({ c1, c2 }) => {
   return (

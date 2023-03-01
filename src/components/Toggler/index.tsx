@@ -6,7 +6,7 @@ import { titleToggler } from "./utils";
 
 const Toggle: React.FC<ButtonProps> = ({ toggleTheme, colorTheme }) => {
   return (
-    <Button as="button" title={titleToggler(colorTheme)} onClick={toggleTheme}>
+    <Button title={titleToggler(colorTheme)} onClick={toggleTheme}>
       <LightbulbFilled colorTheme={colorTheme} />
     </Button>
   );

@@ -17,6 +17,13 @@ export type IconProps = {
   title?: string;
 };
 
+export type InputProps = {
+  top?: string;
+  mtop?: string;
+  left?: string;
+  mleft?: string;
+};
+
 export const icons: IconProps[] = [
   {
     content: "email",

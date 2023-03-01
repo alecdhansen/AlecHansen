@@ -1,8 +1,8 @@
 const GithubIcon = () => {
   return (
     <svg
-      width="40px"
-      height="40px"
+      width="50px"
+      height="50px"
       viewBox="-0.8 -0.8 17.60 17.60"
       xmlns="http://www.w3.org/2000/svg"
       strokeWidth="0.00016"
