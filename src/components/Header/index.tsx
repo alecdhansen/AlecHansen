@@ -7,6 +7,7 @@ import {
   NavLink,
   IconContainer,
   ColorInput,
+  InputContainer,
 } from "./style";
 import image from "../../assets/images/alecwhite.png";
 import DotIcon from "../icons/Dot";
@@ -48,11 +49,10 @@ const Header: React.FC<Props> = ({
       </NavLeft>
       <NavRight>
         {open && (
-          <>
+          <InputContainer>
             <ColorInput
               type="color"
               onChange={(e: any) => setC1(e.target.value)}
-              defaultValue={c1}
               value={c1}
               title="Pick your favorite color!"
             />
@@ -60,10 +60,9 @@ const Header: React.FC<Props> = ({
               type="color"
               onChange={(e: any) => setC2(e.target.value)}
               value={c2}
-              defaultValue={c2}
               title="Pick your favorite color!"
             />
-          </>
+          </InputContainer>
         )}
         <IconContainer
           title={
