@@ -61,6 +61,7 @@ export const NavRight = styled.div`
 export const NavLink = styled.a`
   padding: 0px 5px;
   transition: all 0.2s linear;
+  -webkit-tap-highlight-color: transparent;
   &:hover {
     transform: scale(1.2);
     transition: all 0.2s linear;
@@ -108,6 +109,7 @@ export const IconContainer = styled.div`
   padding: 0px 5px;
   transition: all 0.2s linear;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   &:hover {
     transform: scale(1.2);
     transition: all 0.2s linear;
@@ -124,6 +126,7 @@ export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
 `;
 
 export const ColorInput = styled.input.attrs(() => ({

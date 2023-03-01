@@ -6,6 +6,7 @@ export const Button = styled.div`
   padding: 0px 5px;
   transition: all 0.2s linear;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   &:hover {
     transform: scale(1.2);
     transition: all 0.2s linear;
