@@ -65,6 +65,11 @@ export const NavLink = styled.a`
     transform: scale(1.2);
     transition: all 0.2s linear;
   }
+  @media (max-width: 445px) {
+    &:hover {
+      transform: scale(1);
+    }
+  }
 `;
 
 export const AlecImage = styled.img<ImageProps>`
@@ -88,6 +93,11 @@ export const AlecImage = styled.img<ImageProps>`
     transform: scale(1.1);
     animation: 1s;
   }
+  @media (max-width: 445px) {
+    &:hover {
+      transform: scale(1);
+    }
+  }
 `;
 
 export const DotContainer = styled.a`
@@ -102,6 +112,11 @@ export const IconContainer = styled.div<{ transform?: string }>`
   &:hover {
     transform: scale(1.2);
     transition: all 0.2s linear;
+  }
+  @media (max-width: 445px) {
+    &:hover {
+      transform: scale(1);
+    }
   }
 `;
 
