@@ -3,8 +3,8 @@ import { black, yellowBulb } from "../Themes";
 const LightbulbFilled = (colorTheme?: any) => {
   return (
     <svg
-      width="42px"
-      height="42px"
+      width="50px"
+      height="50px"
       viewBox="-1.2 -1.2 26.40 27.40"
       xmlns="http://www.w3.org/2000/svg"
       strokeWidth="0.00024000000000000003"

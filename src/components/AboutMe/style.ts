@@ -30,7 +30,7 @@ export const BlurbContainer = styled.p<{ borderImage?: string }>`
   border-image: ${({ borderImage }) => borderImage};
   border-left-width: 3px;
   border-left-style: solid;
-  padding: 0 0 0 30px;
+  padding: 0 30px 0 30px;
   font-size: 18px;
 `;
 

@@ -20,8 +20,8 @@ const ColorPicker = ({ colorTheme, open }: ColorPickerProps) => {
       version="1.1"
       id="Capa_1"
       xmlns="http://www.w3.org/2000/svg"
-      width="40px"
-      height="40px"
+      width="50px"
+      height="50px"
       viewBox="-121.2 -121.2 633.35 633.35"
       strokeWidth="0.00390954"
     >
