@@ -47,31 +47,31 @@ const Header: React.FC<Props> = ({
           src={image}
         />
       </NavLeft>
+      {open && (
+        <InputContainer>
+          <ColorInput
+            type="color"
+            onChange={(e: any) => setC1(e.target.value)}
+            value={c1}
+            title="Pick your favorite color!"
+            top="-60px"
+            left="36px"
+            mtop="-30px"
+            mleft="-35px"
+          />
+          <ColorInput
+            type="color"
+            onChange={(e: any) => setC2(e.target.value)}
+            value={c2}
+            title="Pick your favorite color!"
+            top="-60px"
+            left="80px"
+            mtop="-30px"
+            mleft="6px"
+          />
+        </InputContainer>
+      )}
       <NavRight>
-        {open && (
-          <InputContainer>
-            <ColorInput
-              type="color"
-              onChange={(e: any) => setC1(e.target.value)}
-              value={c1}
-              title="Pick your favorite color!"
-              top="-55%"
-              left="-10px"
-              mtop="8%"
-              mleft="10px"
-            />
-            <ColorInput
-              type="color"
-              onChange={(e: any) => setC2(e.target.value)}
-              value={c2}
-              title="Pick your favorite color!"
-              top="92%"
-              left="-10px"
-              mtop="8%"
-              mleft="60px"
-            />
-          </InputContainer>
-        )}
         <IconContainer
           title={
             open ? "Close color picker" : "Click me to customize theme color!"

@@ -117,7 +117,6 @@ export const ColorInput = styled.input.attrs(() => ({
   cursor: pointer;
   position: absolute;
   -webkit-appearance: none;
-  left: 0%;
   border: none;
   margin-right: 10px;
   width: 30px;
