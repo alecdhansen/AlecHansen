@@ -7,7 +7,7 @@ export const AppContainer = styled.div`
 
 export const TopBorderContainer = styled.div`
   left: 5%;
-  /* pointer-events: none; */
+  pointer-events: none;
   z-index: 60;
   position: absolute;
   display: flex;
