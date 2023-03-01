@@ -10,4 +10,9 @@ export const Button = styled.div`
     transform: scale(1.2);
     transition: all 0.2s linear;
   }
+  @media (max-width: 445px) {
+    &:hover {
+      transform: scale(1);
+    }
+  }
 `;
