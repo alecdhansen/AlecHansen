@@ -104,15 +104,15 @@ export const DotContainer = styled.a`
   margin-top: 180px;
 `;
 
-export const IconContainer = styled.div<{ transform?: string }>`
+export const IconContainer = styled.div`
   padding: 0px 5px;
   transition: all 0.2s linear;
-  transform: ${({ transform }) => transform};
   cursor: pointer;
   &:hover {
     transform: scale(1.2);
     transition: all 0.2s linear;
   }
+
   @media (max-width: 445px) {
     &:hover {
       transform: scale(1);

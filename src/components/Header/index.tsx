@@ -55,9 +55,9 @@ const Header: React.FC<Props> = ({
             value={c1}
             title="Pick your favorite color!"
             top="-60px"
-            left="36px"
-            mtop="-30px"
-            mleft="-35px"
+            left="220px"
+            mtop="-65px"
+            mleft="35px"
           />
           <ColorInput
             type="color"
@@ -65,9 +65,9 @@ const Header: React.FC<Props> = ({
             value={c2}
             title="Pick your favorite color!"
             top="-60px"
-            left="80px"
+            left="270px"
             mtop="-30px"
-            mleft="6px"
+            mleft="60px"
           />
         </InputContainer>
       )}
@@ -76,7 +76,6 @@ const Header: React.FC<Props> = ({
           title={
             open ? "Close color picker" : "Click me to customize theme color!"
           }
-          transform={open ? "scale(1.2)" : ""}
           onClick={() => (!open ? setOpen(true) : setOpen(false))}
         >
           <ColorPicker colorTheme={colorTheme} open={open} />
