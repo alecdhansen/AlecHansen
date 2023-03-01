@@ -19,8 +19,9 @@ export type IconProps = {
 
 export type InputProps = {
   top?: string;
-  right?: string;
+  mtop?: string;
   left?: string;
+  mleft?: string;
 };
 
 export const icons: IconProps[] = [

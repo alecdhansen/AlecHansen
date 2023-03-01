@@ -108,12 +108,14 @@ export const IconContainer = styled.div<{ transform?: string }>`
 export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
 `;
 
 export const ColorInput = styled.input.attrs(() => ({
   className: "animate__animated animate__zoomIn",
 }))<InputProps>`
   cursor: pointer;
+  position: absolute;
   -webkit-appearance: none;
   left: 0%;
   border: none;
@@ -121,8 +123,8 @@ export const ColorInput = styled.input.attrs(() => ({
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  top: ${({ top }) => top};
   left: ${({ left }) => left};
-  right: ${({ top }) => top};
   ::-webkit-color-swatch-wrapper {
     padding: 0;
     border-radius: 50%;
@@ -134,5 +136,9 @@ export const ColorInput = styled.input.attrs(() => ({
     border-radius: 50%;
     width: 30px;
     height: 30px;
+  }
+  @media (max-width: 445px) {
+    top: ${({ mtop }) => mtop};
+    left: ${({ mleft }) => mleft};
   }
 `;

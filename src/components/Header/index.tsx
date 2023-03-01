@@ -55,12 +55,20 @@ const Header: React.FC<Props> = ({
               onChange={(e: any) => setC1(e.target.value)}
               value={c1}
               title="Pick your favorite color!"
+              top="-55%"
+              left="-10px"
+              mtop="8%"
+              mleft="10px"
             />
             <ColorInput
               type="color"
               onChange={(e: any) => setC2(e.target.value)}
               value={c2}
               title="Pick your favorite color!"
+              top="92%"
+              left="-10px"
+              mtop="8%"
+              mleft="60px"
             />
           </InputContainer>
         )}
