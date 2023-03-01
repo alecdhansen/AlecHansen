@@ -31,6 +31,7 @@ export const ProjectNavContainer = styled.div<ContainerProps>`
 export const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
+  -webkit-tap-highlight-color: transparent;
 `;
 
 export const Underline = styled.div<UnderlineProps>`
