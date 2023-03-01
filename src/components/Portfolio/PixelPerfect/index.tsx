@@ -30,8 +30,8 @@ const PixelPerfect: React.FC<Props> = ({ c1, c2 }) => {
           to match exactly the request of a client.
         </BlurbContainer>
         <TechnologiesContainer>
-          {pixelTech.map((tech) => (
-            <TechnologyIcon>{tech}</TechnologyIcon>
+          {pixelTech.map((tech, i) => (
+            <TechnologyIcon key={i}>{tech}</TechnologyIcon>
           ))}
         </TechnologiesContainer>
         <LinksContainer>

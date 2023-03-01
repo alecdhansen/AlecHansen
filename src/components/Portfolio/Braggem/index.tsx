@@ -31,8 +31,8 @@ const Braggem: React.FC<Props> = ({ c1, c2 }) => {
           your game-winner picking skills.
         </BlurbContainer>
         <TechnologiesContainer>
-          {braggemTech.map((tech) => (
-            <TechnologyIcon>{tech}</TechnologyIcon>
+          {braggemTech.map((tech, i) => (
+            <TechnologyIcon key={i}>{tech}</TechnologyIcon>
           ))}
         </TechnologiesContainer>
         <LinksContainer>

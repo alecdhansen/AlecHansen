@@ -42,8 +42,8 @@ const NewspaperApp: React.FC<Props> = ({ c1, c2 }) => {
           </SubItem>
         </SubContainer>
         <TechnologiesContainer>
-          {newspaperTech.map((tech) => (
-            <TechnologyIcon>{tech}</TechnologyIcon>
+          {newspaperTech.map((tech, i) => (
+            <TechnologyIcon key={i}>{tech}</TechnologyIcon>
           ))}
         </TechnologiesContainer>
         <LinksContainer>
