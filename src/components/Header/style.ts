@@ -14,7 +14,7 @@ export const NavContainer = styled.div`
 
 export const NavLeft = styled.div`
   position: relative;
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: flex-start;
   z-index: 100;
@@ -33,13 +33,21 @@ export const NavLeft = styled.div`
 
 export const NavRight = styled.div`
   display: flex;
-  justify-content: flex-end;
-  width: 50%;
+  flex-direction: column;
+  width: 40%;
   z-index: 0;
   max-height: 50px;
-  @media (min-width: 445px) and (max-width: 800px) {
+  @media (min-width: 445px) and (max-width: 950px) {
+    flex-direction: column-reverse;
+    margin-top: 240px;
+  }
+`;
+
+export const Icons = styled.div`
+  display: flex;
+  @media (min-width: 445px) and (max-width: 950px) {
     margin-right: 0%;
-    margin-top: 130px;
+    /* margin-top: 50px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: -100px;
@@ -49,7 +57,6 @@ export const NavRight = styled.div`
     grid-template-columns: 1fr 1fr;
     margin-bottom: 20px;
     margin-right: 15px;
-
     & > :nth-child(even) {
       margin-top: 40px;
       margin-left: -35px;
@@ -58,8 +65,13 @@ export const NavRight = styled.div`
   }
 `;
 
+export const Pickers = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
+
 export const NavLink = styled.a`
-  padding: 0px 5px;
+  padding: 0px 10px;
   transition: all 0.2s linear;
   -webkit-tap-highlight-color: transparent;
   &:hover {
@@ -106,7 +118,7 @@ export const DotContainer = styled.a`
 `;
 
 export const IconContainer = styled.div`
-  padding: 0px 5px;
+  padding: 0px 10px;
   transition: all 0.2s linear;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -124,24 +136,23 @@ export const IconContainer = styled.div`
 
 export const InputContainer = styled.div`
   display: flex;
-  flex-direction: column;
   position: relative;
   -webkit-tap-highlight-color: transparent;
+  @media (min-width: 445px) and (max-width: 950px) {
+    margin-bottom: 10px;
+  }
 `;
 
 export const ColorInput = styled.input.attrs(() => ({
   className: "animate__animated animate__zoomIn",
 }))<InputProps>`
   cursor: pointer;
-  position: absolute;
   -webkit-appearance: none;
   border: none;
-  margin-right: 10px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  top: ${({ top }) => top};
-  left: ${({ left }) => left};
+  margin-right: ${({ marginRight }) => marginRight};
   ::-webkit-color-swatch-wrapper {
     padding: 0;
     border-radius: 50%;
@@ -157,5 +168,6 @@ export const ColorInput = styled.input.attrs(() => ({
   @media (max-width: 445px) {
     top: ${({ mtop }) => mtop};
     left: ${({ mleft }) => mleft};
+    position: absolute;
   }
 `;

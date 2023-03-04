@@ -8,6 +8,8 @@ import {
   IconContainer,
   ColorInput,
   InputContainer,
+  Icons,
+  Pickers,
 } from "./style";
 import image from "../../assets/images/alecwhite.png";
 import DotIcon from "../icons/Dot";
@@ -47,51 +49,52 @@ const Header: React.FC<Props> = ({
           src={image}
         />
       </NavLeft>
-      {open && (
-        <InputContainer>
-          <ColorInput
-            type="color"
-            onChange={(e: any) => setC1(e.target.value)}
-            value={c1}
-            title="Pick your favorite color!"
-            top="-60px"
-            left="220px"
-            mtop="-65px"
-            mleft="35px"
-          />
-          <ColorInput
-            type="color"
-            onChange={(e: any) => setC2(e.target.value)}
-            value={c2}
-            title="Pick your favorite color!"
-            top="-60px"
-            left="270px"
-            mtop="-30px"
-            mleft="60px"
-          />
-        </InputContainer>
-      )}
       <NavRight>
-        <IconContainer
-          title={
-            open ? "Close color picker" : "Click me to customize theme color!"
-          }
-          onClick={() => (!open ? setOpen(true) : setOpen(false))}
-        >
-          <ColorPicker colorTheme={colorTheme} open={open} />
-        </IconContainer>
-        <Toggle toggleTheme={themeToggler} colorTheme={colorTheme} />
-
-        {icons.map((icon: IconProps) => (
-          <NavLink
-            title={icon.title}
-            key={icon.content}
-            href={icon.url}
-            target="_blank"
+        <Icons>
+          <IconContainer
+            title={
+              open ? "Close color picker" : "Click me to customize theme color!"
+            }
+            onClick={() => (!open ? setOpen(true) : setOpen(false))}
           >
-            {icon.icon}
-          </NavLink>
-        ))}
+            <ColorPicker colorTheme={colorTheme} open={open} />
+          </IconContainer>
+          <Toggle toggleTheme={themeToggler} colorTheme={colorTheme} />
+
+          {icons.map((icon: IconProps) => (
+            <NavLink
+              title={icon.title}
+              key={icon.content}
+              href={icon.url}
+              target="_blank"
+            >
+              {icon.icon}
+            </NavLink>
+          ))}
+        </Icons>
+        <Pickers>
+          {open && (
+            <InputContainer>
+              <ColorInput
+                type="color"
+                onChange={(e: any) => setC1(e.target.value)}
+                value={c1}
+                title="Pick your favorite color!"
+                mtop="-300px"
+                mleft="35px"
+                marginRight="7px"
+              />
+              <ColorInput
+                type="color"
+                onChange={(e: any) => setC2(e.target.value)}
+                value={c2}
+                title="Pick your favorite color!"
+                mtop="-300px"
+                mleft="75px"
+              />
+            </InputContainer>
+          )}
+        </Pickers>
       </NavRight>
     </NavContainer>
   );
