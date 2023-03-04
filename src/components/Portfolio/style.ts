@@ -10,7 +10,7 @@ import {
 export const Container = styled.div.attrs(() => ({
   className: "animate__animated animate__fadeIn",
 }))`
-  margin-top: 170px;
+  margin-top: 200px;
   margin-right: 10px;
 `;
 
