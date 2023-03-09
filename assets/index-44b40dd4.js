@@ -117,12 +117,12 @@ Error generating stack: `+i.message+`
       transform: scale(1);
     }
   }
-`,zh=e=>e==="light"?"Turn off the lights!":"Turn on the lights!",Nh=({toggleTheme:e,colorTheme:t})=>v(Ph,{title:zh(t),onClick:e,children:v($h,{colorTheme:t})}),Lh=({colorTheme:e,open:t})=>{const n=(r,l)=>{if(r==="light"&&l)return Fr;if(r==="dark"&&l)return ni};return V("svg",{version:"1.1",id:"Capa_1",xmlns:"http://www.w3.org/2000/svg",width:"50px",height:"50px",viewBox:"-121.2 -121.2 633.35 633.35",strokeWidth:"0.00390954",children:[v("g",{id:"SVGRepo_bgCarrier",strokeWidth:"0",children:v("path",{transform:"translate(-121.2, -121.2), scale(39.584375)",fill:"url(#grad0)",d:"M9.166.33a2.25 2.25 0 00-2.332 0l-5.25 3.182A2.25 2.25 0 00.5 5.436v5.128a2.25 2.25 0 001.084 1.924l5.25 3.182a2.25 2.25 0 002.332 0l5.25-3.182a2.25 2.25 0 001.084-1.924V5.436a2.25 2.25 0 00-1.084-1.924L9.166.33z",strokeWidth:"0"})}),V("g",{id:"SVGRepo_iconCarrier",children:[v("path",{fill:n(e,t),d:"M377.314,27.704C360.761,0.494,325.283-8.145,298.076,8.41l-52.561,31.977l-3.607-5.932 c-10.484-17.229-32.947-22.7-50.179-12.218C174.5,32.72,169.032,55.184,179.512,72.415l7.162,11.771L60.314,161.652 c-11.612,7.065-30.483,32.364-35.989,39.95c-2.97,4.09-3.191,9.563-0.565,13.881l24.784,40.738 c2.627,4.317,7.591,6.637,12.587,5.88c9.269-1.402,40.41-6.529,52.024-13.596l126.357-77.467l7.161,11.771 c10.481,17.229,32.946,22.7,50.178,12.217c17.229-10.481,22.699-32.946,12.217-50.177l-3.607-5.93l52.561-31.978 C385.229,90.389,393.868,54.912,377.314,27.704z M100.124,227.084l-0.694-59.882l85.469-52.59 c0.715,8.641,3.392,17.25,8.204,25.161c4.812,7.911,11.229,14.245,18.571,18.853L100.124,227.084z"}),v("path",{fill:n(e,t),d:"M52.666,276.584c-1.823-1.458-4.413-1.459-6.238-0.003C44.745,277.922,5.23,309.82,5.23,343.554 c0,27.909,18.223,47.4,44.314,47.4c26.836,0,46.314-19.936,46.314-47.4C95.859,311.472,54.43,277.995,52.666,276.584z M55.582,378.402c-0.414,0.104-0.829,0.155-1.237,0.155c-2.231,0-4.266-1.506-4.842-3.769c-0.68-2.672,0.931-5.389,3.6-6.075 c0.915-0.241,20.916-5.754,20.913-25.823c0-2.762,2.237-5,4.999-5.001c2.762,0,5.001,2.238,5.001,4.999 C84.02,365.254,65.417,375.898,55.582,378.402z"})]})]})};const Th=({setFocus:e,setC1:t,setC2:n,themeToggler:r,colorTheme:l,c1:i,c2:o})=>{const[u,a]=fe.useState(!1);return V(nh,{children:[V(rh,{children:[v(sh,{children:v(ph,{})}),v(ah,{onClick:()=>{e(1),t(ei(ti,1)),n(ei(ti,2))},style:{position:"absolute"},src:dh})]}),V(lh,{children:[V(ih,{children:[v(ch,{title:u?"Close color picker":"Click me to customize theme color!",onClick:()=>a(!u),children:v(Lh,{colorTheme:l,open:u})}),v(Nh,{toggleTheme:r,colorTheme:l}),wh.map(p=>v(uh,{title:p.title,href:p.url,target:"_blank",children:p.icon},p.content))]}),v(oh,{children:u&&V(fh,{children:[v(Ks,{type:"color",onChange:p=>t(p.target.value),value:i,title:"Pick your favorite color!",mtop:"-300px",mleft:"35px",marginRight:"7px"}),v(Ks,{type:"color",onChange:p=>n(p.target.value),value:o,title:"Pick your favorite color!",mtop:"-300px",mleft:"75px"})]})})]})]})},Rh=({c1:e,c2:t})=>V("svg",{width:"300",height:"300","data-name":"corner-top-left",xmlns:"http://www.w3.org/2000/svg",style:{pointerEvents:"none"},"data-inlinesvg":".inlineSvgFile-1",children:[v("defs",{children:V("linearGradient",{id:"grad0",x1:"0%",y1:"0%",x2:"100%",y2:"100%",children:[v("stop",{offset:"0",stopColor:e}),v("stop",{offset:".5",stopColor:t}),v("stop",{offset:"1",stopColor:e})]})}),v("path",{fill:"url(#grad0",d:"M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"})]}),Ih=()=>v("svg",{width:"300",height:"300","data-name":"corner-bottom-right",xmlns:"http://www.w3.org/2000/svg",style:{pointerEvents:"none"},"data-inlinesvg":".inlineSvgFile-7",children:v("path",{fill:"url(#grad0)",d:"M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"})}),Ah=F.div`
+`,zh=e=>e==="light"?"Turn off the lights!":"Turn on the lights!",Nh=({toggleTheme:e,colorTheme:t})=>v(Ph,{title:zh(t),onClick:e,children:v($h,{colorTheme:t})}),Lh=({colorTheme:e,open:t})=>{const n=(r,l)=>{if(r==="light"&&l)return Fr;if(r==="dark"&&l)return ni};return V("svg",{version:"1.1",id:"Capa_1",xmlns:"http://www.w3.org/2000/svg",width:"50px",height:"50px",viewBox:"-121.2 -121.2 633.35 633.35",strokeWidth:"0.00390954",children:[v("g",{id:"SVGRepo_bgCarrier",strokeWidth:"0",children:v("path",{transform:"translate(-121.2, -121.2), scale(39.584375)",fill:"url(#grad0)",d:"M9.166.33a2.25 2.25 0 00-2.332 0l-5.25 3.182A2.25 2.25 0 00.5 5.436v5.128a2.25 2.25 0 001.084 1.924l5.25 3.182a2.25 2.25 0 002.332 0l5.25-3.182a2.25 2.25 0 001.084-1.924V5.436a2.25 2.25 0 00-1.084-1.924L9.166.33z",strokeWidth:"0"})}),V("g",{id:"SVGRepo_iconCarrier",children:[v("path",{fill:n(e,t),d:"M377.314,27.704C360.761,0.494,325.283-8.145,298.076,8.41l-52.561,31.977l-3.607-5.932 c-10.484-17.229-32.947-22.7-50.179-12.218C174.5,32.72,169.032,55.184,179.512,72.415l7.162,11.771L60.314,161.652 c-11.612,7.065-30.483,32.364-35.989,39.95c-2.97,4.09-3.191,9.563-0.565,13.881l24.784,40.738 c2.627,4.317,7.591,6.637,12.587,5.88c9.269-1.402,40.41-6.529,52.024-13.596l126.357-77.467l7.161,11.771 c10.481,17.229,32.946,22.7,50.178,12.217c17.229-10.481,22.699-32.946,12.217-50.177l-3.607-5.93l52.561-31.978 C385.229,90.389,393.868,54.912,377.314,27.704z M100.124,227.084l-0.694-59.882l85.469-52.59 c0.715,8.641,3.392,17.25,8.204,25.161c4.812,7.911,11.229,14.245,18.571,18.853L100.124,227.084z"}),v("path",{fill:n(e,t),d:"M52.666,276.584c-1.823-1.458-4.413-1.459-6.238-0.003C44.745,277.922,5.23,309.82,5.23,343.554 c0,27.909,18.223,47.4,44.314,47.4c26.836,0,46.314-19.936,46.314-47.4C95.859,311.472,54.43,277.995,52.666,276.584z M55.582,378.402c-0.414,0.104-0.829,0.155-1.237,0.155c-2.231,0-4.266-1.506-4.842-3.769c-0.68-2.672,0.931-5.389,3.6-6.075 c0.915-0.241,20.916-5.754,20.913-25.823c0-2.762,2.237-5,4.999-5.001c2.762,0,5.001,2.238,5.001,4.999 C84.02,365.254,65.417,375.898,55.582,378.402z"})]})]})};const Th=()=>v("div",{children:"hello"}),Rh=({setFocus:e,setC1:t,setC2:n,themeToggler:r,colorTheme:l,c1:i,c2:o})=>{const[u,a]=fe.useState(!1);return V(nh,{children:[V(rh,{children:[v(sh,{children:v(ph,{})}),v(ah,{onClick:()=>{e(1),t(ei(ti,1)),n(ei(ti,2))},style:{position:"absolute"},src:dh}),v(Th,{})]}),V(lh,{children:[V(ih,{children:[v(ch,{title:u?"Close color picker":"Click me to customize theme color!",onClick:()=>a(!u),children:v(Lh,{colorTheme:l,open:u})}),v(Nh,{toggleTheme:r,colorTheme:l}),wh.map(p=>v(uh,{title:p.title,href:p.url,target:"_blank",children:p.icon},p.content))]}),v(oh,{children:u&&V(fh,{children:[v(Ks,{type:"color",onChange:p=>t(p.target.value),value:i,title:"Pick your favorite color!",mtop:"-300px",mleft:"35px",marginRight:"7px"}),v(Ks,{type:"color",onChange:p=>n(p.target.value),value:o,title:"Pick your favorite color!",mtop:"-300px",mleft:"75px"})]})})]})]})},Ih=({c1:e,c2:t})=>V("svg",{width:"300",height:"300","data-name":"corner-top-left",xmlns:"http://www.w3.org/2000/svg",style:{pointerEvents:"none"},"data-inlinesvg":".inlineSvgFile-1",children:[v("defs",{children:V("linearGradient",{id:"grad0",x1:"0%",y1:"0%",x2:"100%",y2:"100%",children:[v("stop",{offset:"0",stopColor:e}),v("stop",{offset:".5",stopColor:t}),v("stop",{offset:"1",stopColor:e})]})}),v("path",{fill:"url(#grad0",d:"M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"})]}),Ah=()=>v("svg",{width:"300",height:"300","data-name":"corner-bottom-right",xmlns:"http://www.w3.org/2000/svg",style:{pointerEvents:"none"},"data-inlinesvg":".inlineSvgFile-7",children:v("path",{fill:"url(#grad0)",d:"M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"})}),Mh=F.div`
   display: flex;
   flex-direction: column;
   margin-top: 200px;
   width: 100%;
-`,Mh=F.h2`
+`,Oh=F.h2`
   font-size: 6vw;
   margin: 0 0 33px 0;
   line-height: 3rem;
@@ -134,16 +134,16 @@ Error generating stack: `+i.message+`
   @media (min-width: 401px) and (max-width: 800px) {
     font-size: 14vw;
   }
-`,Oh=F.div`
+`,jh=F.div`
   margin-top: 20px;
   margin-left: 35px;
-`,jh=F.p`
+`,Dh=F.p`
   border-image: ${({borderImage:e})=>e};
   border-left-width: 3px;
   border-left-style: solid;
   padding: 0 30px 0 30px;
   font-size: 18px;
-`,Dh=F.a`
+`,Fh=F.a`
   border-image: ${({borderImage:e})=>e};
   border-bottom-width: 3px;
   border-bottom-style: solid;
@@ -151,11 +151,11 @@ Error generating stack: `+i.message+`
   &:hover {
     border-image: ${({hover:e})=>e};
   }
-`,Fh=({c1:e,c2:t})=>V(Ah,{children:[v(Mh,{children:"Hello There!"}),V(jh,{borderImage:`linear-gradient(
+`,Uh=({c1:e,c2:t})=>V(Mh,{children:[v(Oh,{children:"Hello There!"}),V(Dh,{borderImage:`linear-gradient(
       to bottom, 
       ${e}, 
       ${t}
-    ) 1 100%;`,children:["My name is Alec Hansen. I'm a software developer currently residing in Greenville, South Carolina, USA. Coding has changed my life! My previous career molded in me a strong background in client care and team management. I now use these skills to build web and mobile applications with a great attention to detail and (when with a team) I collaborate with others thoughtfully and efficiently.",v("br",{}),v("br",{}),"I'm looking for my next opportunity. Let me generate solutions that fit your needs!"]}),v(Oh,{children:v(Dh,{href:"mailto:alecdhansen@gmail.com",borderImage:`linear-gradient(
+    ) 1 100%;`,children:["My name is Alec Hansen. I'm a software developer currently residing in Greenville, South Carolina, USA. Coding has changed my life! My previous career molded in me a strong background in client care and team management. I now use these skills to build web and mobile applications with a great attention to detail and (when with a team) I collaborate with others thoughtfully and efficiently.",v("br",{}),v("br",{}),"I'm looking for my next opportunity. Let me generate solutions that fit your needs!"]}),v(jh,{children:v(Fh,{href:"mailto:alecdhansen@gmail.com",borderImage:`linear-gradient(
         to left,
         ${e},
         ${t}
@@ -188,7 +188,7 @@ Error generating stack: `+i.message+`
 `,_a=F.p`
   padding: 0 0 0 30px;
   font-size: 18px;
-`,Uh=F.div`
+`,Vh=F.div`
   padding-left: 60px;
   margin-bottom: 30px;
 `,go=F.p`
@@ -238,11 +238,11 @@ Error generating stack: `+i.message+`
     margin: ${({margin:e})=>e};
     padding: 0;
   }
-`,Vh=["React Js","Python","Django","Django-Celery","Django REST Framework","React-Bootstrap","React-Router","Heroku","PostGres Database","NBA Schedule API"],Bh=["React Js","Python","Django","Django REST Framework","React-Bootstrap","React-Router","Heroku"],Hh=["HTML5","CSS3"],Wh=({c1:e,c2:t})=>V(ka,{children:[v(xa,{fontSize:"85px",lineHeight:"3rem",children:"Braggem"}),V(Ca,{borderImage:`linear-gradient(
+`,Bh=["React Js","Python","Django","Django-Celery","Django REST Framework","React-Bootstrap","React-Router","Heroku","PostGres Database","NBA Schedule API"],Hh=["React Js","Python","Django","Django REST Framework","React-Bootstrap","React-Router","Heroku"],Wh=["HTML5","CSS3"],Qh=({c1:e,c2:t})=>V(ka,{children:[v(xa,{fontSize:"85px",lineHeight:"3rem",children:"Braggem"}),V(Ca,{borderImage:`linear-gradient(
       to bottom, 
       ${e}, 
       ${t}
-    ) 1 100%;`,children:[v(_a,{children:"Braggem was built to provide users an exciting experience while following the NBA season. Predict game winners, view leaderboard, challenge other users, and customize your profile while showcasing your game-winner picking skills."}),v(Ea,{children:Vh.map((n,r)=>v($a,{children:n},r))}),V(Pa,{children:[v(on,{margin:"0",children:v(un,{href:"https://braggem.herokuapp.com/",target:"_blank",fontSize:"14px",borderImage:`linear-gradient(
+    ) 1 100%;`,children:[v(_a,{children:"Braggem was built to provide users an exciting experience while following the NBA season. Predict game winners, view leaderboard, challenge other users, and customize your profile while showcasing your game-winner picking skills."}),v(Ea,{children:Bh.map((n,r)=>v($a,{children:n},r))}),V(Pa,{children:[v(on,{margin:"0",children:v(un,{href:"https://braggem.herokuapp.com/",target:"_blank",fontSize:"14px",borderImage:`linear-gradient(
         to left,
         ${e},
         ${t}
@@ -266,11 +266,11 @@ Error generating stack: `+i.message+`
         to left,
         ${t},
         ${e}
-      ) 1 10%;`,children:"Youtube Walkthrough"})})]})]})]}),Qh=({c1:e,c2:t})=>V(ka,{children:[v(xa,{fontSize:"80px",lineHeight:"4rem",children:"Newspaper App"}),V(Ca,{borderImage:`linear-gradient(
+      ) 1 10%;`,children:"Youtube Walkthrough"})})]})]})]}),Gh=({c1:e,c2:t})=>V(ka,{children:[v(xa,{fontSize:"80px",lineHeight:"4rem",children:"Newspaper App"}),V(Ca,{borderImage:`linear-gradient(
       to bottom, 
       ${e}, 
       ${t}
-    ) 1 100%;`,children:[v(_a,{children:"Full CRUD application designed for three distinct user types:"}),V(Uh,{children:[v(go,{children:"● The general user is able to view articles on the homepage."}),v(go,{children:"● Authors are able to write articles and submit for review."}),v(go,{children:"● The editor is able to approve articles for publication or reject those articles."})]}),v(Ea,{children:Bh.map((n,r)=>v($a,{children:n},r))}),V(Pa,{children:[v(on,{children:v(un,{href:"https://newspaper-app-alecdhansen.herokuapp.com/",target:"_blank",borderImage:`linear-gradient(
+    ) 1 100%;`,children:[v(_a,{children:"Full CRUD application designed for three distinct user types:"}),V(Vh,{children:[v(go,{children:"● The general user is able to view articles on the homepage."}),v(go,{children:"● Authors are able to write articles and submit for review."}),v(go,{children:"● The editor is able to approve articles for publication or reject those articles."})]}),v(Ea,{children:Hh.map((n,r)=>v($a,{children:n},r))}),V(Pa,{children:[v(on,{children:v(un,{href:"https://newspaper-app-alecdhansen.herokuapp.com/",target:"_blank",borderImage:`linear-gradient(
         to left,
         ${e},
         ${t}
@@ -286,11 +286,11 @@ Error generating stack: `+i.message+`
         to left,
         ${t},
         ${e}
-      ) 1 10%;`,children:"Github Repo"})})]})]})]}),Gh=({c1:e,c2:t})=>V(ka,{children:[v(xa,{fontSize:"80px",lineHeight:"4rem",children:"Pixel Perfect"}),V(Ca,{borderImage:`linear-gradient(
+      ) 1 10%;`,children:"Github Repo"})})]})]})]}),Yh=({c1:e,c2:t})=>V(ka,{children:[v(xa,{fontSize:"80px",lineHeight:"4rem",children:"Pixel Perfect"}),V(Ca,{borderImage:`linear-gradient(
       to bottom, 
       ${e}, 
       ${t}
-    ) 1 100%;`,children:[v(_a,{children:"Responsive recreation of a blog site that mirrors every element down to the pixel. This project showcases my skill to combine HTML and CSS to match exactly the request of a client."}),v(Ea,{children:Hh.map((n,r)=>v($a,{children:n},r))}),V(Pa,{children:[v(on,{children:v(un,{href:"https://alecdhansen.github.io/pixel-perfect/",target:"_blank",borderImage:`linear-gradient(
+    ) 1 100%;`,children:[v(_a,{children:"Responsive recreation of a blog site that mirrors every element down to the pixel. This project showcases my skill to combine HTML and CSS to match exactly the request of a client."}),v(Ea,{children:Wh.map((n,r)=>v($a,{children:n},r))}),V(Pa,{children:[v(on,{children:v(un,{href:"https://alecdhansen.github.io/pixel-perfect/",target:"_blank",borderImage:`linear-gradient(
         to left,
         ${e},
         ${t}
@@ -306,13 +306,13 @@ Error generating stack: `+i.message+`
         to left,
         ${t},
         ${e}
-      ) 1 10%;`,children:"Github Repo"})})]})]})]}),Yh=F.div`
+      ) 1 10%;`,children:"Github Repo"})})]})]})]}),Kh=F.div`
   width: 75%;
   padding-right: 10%;
   @media (max-width: 800px) {
     width: 100%;
   }
-`,Kh=({focus:e,c1:t,c2:n})=>{let r;return e===1&&(r=v(Fh,{c1:t,c2:n})),e===2&&(r=v(Wh,{c1:t,c2:n})),e===3&&(r=v(Qh,{c1:t,c2:n})),e===4&&(r=v(Gh,{c1:t,c2:n})),v(Yh,{children:r})},Xh=F.div`
+`,Xh=({focus:e,c1:t,c2:n})=>{let r;return e===1&&(r=v(Uh,{c1:t,c2:n})),e===2&&(r=v(Qh,{c1:t,c2:n})),e===3&&(r=v(Gh,{c1:t,c2:n})),e===4&&(r=v(Yh,{c1:t,c2:n})),v(Kh,{children:r})},Zh=F.div`
   width: 310px;
   display: flex;
   flex-direction: column;
@@ -320,11 +320,11 @@ Error generating stack: `+i.message+`
   @media (max-width: 600px) {
     margin-top: 50px;
   }
-`,Zh=F.h3`
+`,Jh=F.h3`
   font-size: 30px;
   padding: none;
   margin-bottom: 20px;
-`,Jh=F.div`
+`,qh=F.div`
   border-image: ${({borderImage:e})=>e};
   border-top-width: 3px;
   border-top-style: solid;
@@ -335,7 +335,7 @@ Error generating stack: `+i.message+`
   &:hover {
     border-image: ${({hover:e})=>e};
   }
-`,qh=F.div`
+`,bh=F.div`
   display: flex;
   flex-direction: column;
   -webkit-tap-highlight-color: transparent;
@@ -364,7 +364,7 @@ Error generating stack: `+i.message+`
   &:hover {
     border-image: ${({hover:e})=>e};
   }
-`,bh=({focus:e,setFocus:t,c1:n,c2:r})=>V(Xh,{children:[v(Zh,{children:"Projects"}),v(Jh,{borderImage:`linear-gradient(
+`,em=({focus:e,setFocus:t,c1:n,c2:r})=>V(Zh,{children:[v(Jh,{children:"Projects"}),v(qh,{borderImage:`linear-gradient(
         to right,
         ${n},
         ${r}
@@ -372,7 +372,7 @@ Error generating stack: `+i.message+`
         to right,
         ${r},
         ${n}
-      ) 1 40%;`,children:V(qh,{children:[v(fl,{transform:e===2?"scale(1.3)":"",pLeft:e===2?"27px":"",mLeft:e===2?"7px":"",hPleft:e===2?"-10px":"10px",children:v(dl,{onClick:()=>t(2),cursor:"pointer",borderImage:`linear-gradient(
+      ) 1 40%;`,children:V(bh,{children:[v(fl,{transform:e===2?"scale(1.3)":"",pLeft:e===2?"27px":"",mLeft:e===2?"7px":"",hPleft:e===2?"-10px":"10px",children:v(dl,{onClick:()=>t(2),cursor:"pointer",borderImage:`linear-gradient(
         to left,
         ${n},
         ${r}
@@ -404,7 +404,7 @@ Error generating stack: `+i.message+`
               to left,
               ${r},
               ${n}
-            ) 1 10%;`,children:"This Website!"})})]})})]}),em=K1`
+            ) 1 10%;`,children:"This Website!"})})]})})]}),tm=K1`
 
   :root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -472,4 +472,4 @@ g {
   fill: ${({theme:e})=>e.backgroundColor};
   transition: all 0.20s linear;
 }
-  `,tm=()=>{const[e,t]=fe.useState("light"),[n,r]=fe.useState(!1),l=o=>{window.localStorage.setItem("theme",o),t(o)},i=()=>{l(e==="light"?"dark":"light")};return fe.useEffect(()=>{const o=window.localStorage.getItem("theme");o&&t(o),r(!0)},[]),[e,i,n]},nm=()=>{const[e,t]=fe.useState(ei(ti,1)),[n,r]=fe.useState(ei(ti,2)),[l,i]=fe.useState(1),[o,u,a]=tm(),c=o==="light"?_h:Eh;return a?v(G1,{theme:c,children:V(Wd,{children:[v(em,{}),V(X1,{children:[v(Z1,{children:v(Rh,{c1:e,c2:n})}),V(b1,{children:[v(eh,{children:v(Th,{setFocus:i,c1:e,c2:n,setC1:t,setC2:r,themeToggler:u,colorTheme:o})}),V(th,{children:[v(Kh,{focus:l,setFocus:i,c1:e,c2:n}),v(bh,{focus:l,setFocus:i,c1:e,c2:n})]})]}),V(J1,{transform:Sh(l),mTransform:"translateY(-200px)",children:[v(Ih,{}),v(q1,{children:"© Alec Hansen, 2023"})]})]})]})}):v("div",{})};vo.createRoot(document.getElementById("root")).render(v(mn.StrictMode,{children:v(nm,{})}));
+  `,nm=()=>{const[e,t]=fe.useState("light"),[n,r]=fe.useState(!1),l=o=>{window.localStorage.setItem("theme",o),t(o)},i=()=>{l(e==="light"?"dark":"light")};return fe.useEffect(()=>{const o=window.localStorage.getItem("theme");o&&t(o),r(!0)},[]),[e,i,n]},rm=()=>{const[e,t]=fe.useState(ei(ti,1)),[n,r]=fe.useState(ei(ti,2)),[l,i]=fe.useState(1),[o,u,a]=nm(),c=o==="light"?_h:Eh;return a?v(G1,{theme:c,children:V(Wd,{children:[v(tm,{}),V(X1,{children:[v(Z1,{children:v(Ih,{c1:e,c2:n})}),V(b1,{children:[v(eh,{children:v(Rh,{setFocus:i,c1:e,c2:n,setC1:t,setC2:r,themeToggler:u,colorTheme:o})}),V(th,{children:[v(Xh,{focus:l,setFocus:i,c1:e,c2:n}),v(em,{focus:l,setFocus:i,c1:e,c2:n})]})]}),V(J1,{transform:Sh(l),mTransform:"translateY(-200px)",children:[v(Ah,{}),v(q1,{children:"© Alec Hansen, 2023"})]})]})]})}):v("div",{})};vo.createRoot(document.getElementById("root")).render(v(mn.StrictMode,{children:v(rm,{})}));
