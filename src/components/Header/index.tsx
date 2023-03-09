@@ -20,6 +20,7 @@ import Toggle from "../Toggler";
 import ColorPicker from "../icons/ColorPicker";
 import { useState } from "react";
 import "animate.css";
+import TextBubble from "../TextBubble";
 
 const Header: React.FC<Props> = ({
   setFocus,
@@ -48,6 +49,7 @@ const Header: React.FC<Props> = ({
           style={{ position: "absolute" }}
           src={image}
         />
+        <TextBubble />
       </NavLeft>
       <NavRight>
         <Icons>
