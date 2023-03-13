@@ -47,7 +47,6 @@ export const Icons = styled.div`
   display: flex;
   @media (min-width: 445px) and (max-width: 950px) {
     margin-right: 0%;
-    /* margin-top: 50px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: -100px;
